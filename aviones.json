@@ -1,0 +1,5447 @@
+{
+  "AV-C1": {
+    "idAvion": "AV-C1",
+    "estadoAvion": "EN_MANTENIMIENTO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 21870.4
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 54486.22
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 80947.54
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 80947.54
+      }
+    }
+  },
+  "AV-C2": {
+    "idAvion": "AV-C2",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20498.48
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 52670.3
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 80193.36
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 80193.36
+      }
+    }
+  },
+  "AV-C3": {
+    "idAvion": "AV-C3",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20170.8
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 52719.14
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 86321.46
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 86321.46
+      }
+    }
+  },
+  "AV-C4": {
+    "idAvion": "AV-C4",
+    "estadoAvion": "FUERA_DE_SERVICIO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 21334.7
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 50672.36
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 83445.64
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 83445.64
+      }
+    }
+  },
+  "AV-C5": {
+    "idAvion": "AV-C5",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20088.08
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 54406.84
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 80000
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 80000
+      }
+    }
+  },
+  "AV-C6": {
+    "idAvion": "AV-C6",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20455.5
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 51108.66
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 85566.62
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 85566.62
+      }
+    }
+  },
+  "AV-C7": {
+    "idAvion": "AV-C7",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20287.94
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 52673.74
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 81966.38
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 81966.38
+      }
+    }
+  },
+  "AV-C8": {
+    "idAvion": "AV-C8",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20603.88
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 52504.6
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 84149.2
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 84149.2
+      }
+    }
+  },
+  "AV-C9": {
+    "idAvion": "AV-C9",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20042.84
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 50000
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 80000
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 80000
+      }
+    }
+  },
+  "AV-C10": {
+    "idAvion": "AV-C10",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "CHICO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 20000
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "EJECUTIVA",
+        "precio": 50000
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "PRIMERA",
+        "precio": 85876.54
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "PRIMERA",
+        "precio": 85876.54
+      }
+    }
+  },
+  "AV-M1": {
+    "idAvion": "AV-M1",
+    "estadoAvion": "EN_MANTENIMIENTO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      }
+    }
+  },
+  "AV-M2": {
+    "idAvion": "AV-M2",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      }
+    }
+  },
+  "AV-M3": {
+    "idAvion": "AV-M3",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      }
+    }
+  },
+  "AV-M4": {
+    "idAvion": "AV-M4",
+    "estadoAvion": "EN_MANTENIMIENTO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      }
+    }
+  },
+  "AV-M5": {
+    "idAvion": "AV-M5",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10834.75
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27042.8
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      }
+    }
+  },
+  "AV-M6": {
+    "idAvion": "AV-M6",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10999.9
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25752.66
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 43078.6
+      }
+    }
+  },
+  "AV-M7": {
+    "idAvion": "AV-M7",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      }
+    }
+  },
+  "AV-M8": {
+    "idAvion": "AV-M8",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10424.47
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26978.7
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 41817.18
+      }
+    }
+  },
+  "AV-M9": {
+    "idAvion": "AV-M9",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10857.7
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27901.44
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 42105
+      }
+    }
+  },
+  "AV-M10": {
+    "idAvion": "AV-M10",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10567.8
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25489.2
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 41221.32
+      }
+    }
+  },
+  "AV-M11": {
+    "idAvion": "AV-M11",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      }
+    }
+  },
+  "AV-M12": {
+    "idAvion": "AV-M12",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      }
+    }
+  },
+  "AV-M13": {
+    "idAvion": "AV-M13",
+    "estadoAvion": "EN_MANTENIMIENTO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10500
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27200
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40500
+      }
+    }
+  },
+  "AV-M14": {
+    "idAvion": "AV-M14",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10899.1
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25801.44
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 41500
+      }
+    }
+  },
+  "AV-M15": {
+    "idAvion": "AV-M15",
+    "estadoAvion": "FUERA_DE_SERVICIO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26000
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 43000
+      }
+    }
+  },
+  "AV-G16": {
+    "idAvion": "AV-G16",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10580.4
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26900
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 41555.26
+      }
+    }
+  },
+  "AV-G17": {
+    "idAvion": "AV-G17",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10245.8
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27499.7
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40755.76
+      }
+    }
+  },
+  "AV-G18": {
+    "idAvion": "AV-G18",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      }
+    }
+  },
+  "AV-G19": {
+    "idAvion": "AV-G19",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10705.5
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25011.6
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 41888.75
+      }
+    }
+  },
+  "AV-G20": {
+    "idAvion": "AV-G20",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10051.48
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27289.4
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40321.61
+      }
+    }
+  },
+  "AV-G21": {
+    "idAvion": "AV-G21",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10950
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 43500
+      }
+    }
+  },
+  "AV-G22": {
+    "idAvion": "AV-G22",
+    "estadoAvion": "EN_MANTENIMIENTO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10321
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 26888.76
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 42000
+      }
+    }
+  },
+  "AV-G23": {
+    "idAvion": "AV-G23",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10000
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25000
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40000
+      }
+    }
+  },
+  "AV-G24": {
+    "idAvion": "AV-G24",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10769.7
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 27423.86
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 40166.44
+      }
+    }
+  },
+  "AV-G25": {
+    "idAvion": "AV-G25",
+    "estadoAvion": "ACTIVO",
+    "tamanioAvion": "MEDIANO",
+    "mapaAsientos": {
+      "1": {
+        "idAsiento": 1,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "2": {
+        "idAsiento": 2,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "3": {
+        "idAsiento": 3,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "4": {
+        "idAsiento": 4,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "5": {
+        "idAsiento": 5,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "6": {
+        "idAsiento": 6,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "7": {
+        "idAsiento": 7,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "8": {
+        "idAsiento": 8,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "9": {
+        "idAsiento": 9,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "10": {
+        "idAsiento": 10,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "11": {
+        "idAsiento": 11,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "12": {
+        "idAsiento": 12,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "13": {
+        "idAsiento": 13,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "14": {
+        "idAsiento": 14,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "15": {
+        "idAsiento": 15,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "16": {
+        "idAsiento": 16,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "17": {
+        "idAsiento": 17,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "18": {
+        "idAsiento": 18,
+        "tipoClase": "TURISTA",
+        "precio": 10520.17
+      },
+      "19": {
+        "idAsiento": 19,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "20": {
+        "idAsiento": 20,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "21": {
+        "idAsiento": 21,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "22": {
+        "idAsiento": 22,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "23": {
+        "idAsiento": 23,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "24": {
+        "idAsiento": 24,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "25": {
+        "idAsiento": 25,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "26": {
+        "idAsiento": 26,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "27": {
+        "idAsiento": 27,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "28": {
+        "idAsiento": 28,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "29": {
+        "idAsiento": 29,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "30": {
+        "idAsiento": 30,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "31": {
+        "idAsiento": 31,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "32": {
+        "idAsiento": 32,
+        "tipoClase": "EJECUTIVA",
+        "precio": 25167.3
+      },
+      "33": {
+        "idAsiento": 33,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "34": {
+        "idAsiento": 34,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "35": {
+        "idAsiento": 35,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "36": {
+        "idAsiento": 36,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "37": {
+        "idAsiento": 37,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "38": {
+        "idAsiento": 38,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "39": {
+        "idAsiento": 39,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      },
+      "40": {
+        "idAsiento": 40,
+        "tipoClase": "PRIMERA",
+        "precio": 43555.26
+      }
+    }
+  }
+}

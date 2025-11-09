@@ -1,13 +1,15 @@
 package clases;
 
 import enums.EstadoAvion;
+import enums.TamanioAvion;
 
-import java.util.List;
+import java.util.HashMap;
 
 public class Avion {
     private String idAvion;
     private EstadoAvion estadoAvion;
-    private List<Asiento> listaAsientos;
+    private TamanioAvion tamanioAvion;
+    private HashMap<Integer, Asiento> mapaAsientos;
 
     /// CONSTRUCTOR
     public Avion() {
@@ -30,11 +32,19 @@ public class Avion {
         this.estadoAvion = estadoAvion;
     }
 
-    public List<Asiento> getListaAsientos() {
-        return listaAsientos;
+    public TamanioAvion getTamanioAvion() {
+        return tamanioAvion;
     }
 
-    public void setListaAsientos(List<Asiento> listaAsientos) {
-        this.listaAsientos = listaAsientos;
+    public void setTamanioAvion(TamanioAvion tamanioAvion) {
+        this.tamanioAvion = tamanioAvion;
+    }
+
+    public HashMap<Integer, Asiento> getMapaAsientos() {
+        return mapaAsientos;
+    }
+
+    public void setMapaAsientos(HashMap<Integer, Asiento> mapaAsientos) {
+        this.mapaAsientos = mapaAsientos;
     }
 }
