@@ -1,0 +1,202 @@
+{
+  "EZE": {
+    "codigo": "EZE",
+    "nombre": "Aeropuerto Internacional Ministro Pistarini",
+    "ubicacion": {
+      "ciudad": "Ezeiza",
+      "provincia": "Buenos Aires"
+    }
+  },
+  "MDQ": {
+    "codigo": "MDQ",
+    "nombre": "Aeropuerto Internacional Astor Piazzolla",
+    "ubicacion": {
+      "ciudad": "Mar del Plata",
+      "provincia": "Buenos Aires"
+    }
+  },
+  "AEP": {
+    "codigo": "AEP",
+    "nombre": "Aeroparque Jorge Newbery",
+    "ubicacion": {
+      "ciudad": "Ciudad Autonoma de Buenos Aires",
+      "provincia": "Ciudad Autonoma de Buenos Aires"
+    }
+  },
+  "CTC": {
+    "codigo": "CTC",
+    "nombre": "Aeropuerto Coronel Felipe Varela",
+    "ubicacion": {
+      "ciudad": "San Fernando del Valle de Catamarca",
+      "provincia": "Catamarca"
+    }
+  },
+  "RES": {
+    "codigo": "RES",
+    "nombre": "Aeropuerto Internacional de Resistencia",
+    "ubicacion": {
+      "ciudad": "Resistencia",
+      "provincia": "Chaco"
+    }
+  },
+  "CRD": {
+    "codigo": "CRD",
+    "nombre": "General Enrique Mosconi",
+    "ubicacion": {
+      "ciudad": "Comodoro Rivadavia",
+      "provincia": "Chubut"
+    }
+  },
+  "COR": {
+    "codigo": "COR",
+    "nombre": "Ingeniero Aeronautico Ambrosio Taravella",
+    "ubicacion": {
+      "ciudad": "Cordoba",
+      "provincia": "Cordoba"
+    }
+  },
+  "CNQ": {
+    "codigo": "CNQ",
+    "nombre": "Doctor Fernando Piragine Niveyro",
+    "ubicacion": {
+      "ciudad": "Corrientes",
+      "provincia": "Corrientes"
+    }
+  },
+  "PRA": {
+    "codigo": "PRA",
+    "nombre": "General Justo Jose de Urquiza",
+    "ubicacion": {
+      "ciudad": "Parana",
+      "provincia": "Entre Rios"
+    }
+  },
+  "FMA": {
+    "codigo": "FMA",
+    "nombre": "Aeropuerto Internacional de Formosa",
+    "ubicacion": {
+      "ciudad": "Formosa",
+      "provincia": "Formosa"
+    }
+  },
+  "JUJ": {
+    "codigo": "JUJ",
+    "nombre": "Gobernador Horacio Guzman",
+    "ubicacion": {
+      "ciudad": "San Salvador de Jujuy",
+      "provincia": "Jujuy"
+    }
+  },
+  "IRJ": {
+    "codigo": "IRJ",
+    "nombre": "Capitan Vicente Almandos Almonacid",
+    "ubicacion": {
+      "ciudad": "La Rioja",
+      "provincia": "La Rioja"
+    }
+  },
+  "MDZ": {
+    "codigo": "MDZ",
+    "nombre": "Gobernador Francisco Gabrielli - El Plumerillo",
+    "ubicacion": {
+      "ciudad": "Mendoza",
+      "provincia": "Mendoza"
+    }
+  },
+  "PSS": {
+    "codigo": "PSS",
+    "nombre": "Libertador General Jose de San Martin",
+    "ubicacion": {
+      "ciudad": "Posadas",
+      "provincia": "Misiones"
+    }
+  },
+  "IGR": {
+    "codigo": "IGR",
+    "nombre": "Cataratas del Iguazu",
+    "ubicacion": {
+      "ciudad": "Puerto Iguazu",
+      "provincia": "Misiones"
+    }
+  },
+  "NQN": {
+    "codigo": "NQN",
+    "nombre": "Presidente Peron",
+    "ubicacion": {
+      "ciudad": "Neuquen",
+      "provincia": "Neuquen"
+    }
+  },
+  "BRC": {
+    "codigo": "BRC",
+    "nombre": "Teniente Luis Candelaria",
+    "ubicacion": {
+      "ciudad": "San Carlos de Bariloche",
+      "provincia": "Rio Negro"
+    }
+  },
+  "SLA": {
+    "codigo": "SLA",
+    "nombre": "General Martin Miguel de Guemes",
+    "ubicacion": {
+      "ciudad": "Salta",
+      "provincia": "Salta"
+    }
+  },
+  "UAQ": {
+    "codigo": "UAQ",
+    "nombre": "Domingo Faustino Sarmiento",
+    "ubicacion": {
+      "ciudad": "San Juan",
+      "provincia": "San Juan"
+    }
+  },
+  "LUQ": {
+    "codigo": "LUQ",
+    "nombre": "Brigadier Mayor Cesar Raul Ojeda",
+    "ubicacion": {
+      "ciudad": "San Luis",
+      "provincia": "San Luis"
+    }
+  },
+  "RGL": {
+    "codigo": "RGL",
+    "nombre": "Piloto Civil Norberto Fernandez",
+    "ubicacion": {
+      "ciudad": "Rio Gallegos",
+      "provincia": "Santa Cruz"
+    }
+  },
+  "ROS": {
+    "codigo": "ROS",
+    "nombre": "Islas Malvinas",
+    "ubicacion": {
+      "ciudad": "Rosario",
+      "provincia": "Santa Fe"
+    }
+  },
+  "SDE": {
+    "codigo": "SDE",
+    "nombre": "Vicecomodoro Angel de la Paz Aragones",
+    "ubicacion": {
+      "ciudad": "Santiago del Estero",
+      "provincia": "Santiago del Estero"
+    }
+  },
+  "USH": {
+    "codigo": "USH",
+    "nombre": "Malvinas Argentinas",
+    "ubicacion": {
+      "ciudad": "Ushuaia",
+      "provincia": "Tierra del Fuego, Antartida e Islas del Atlantico Sur"
+    }
+  },
+  "TUC": {
+    "codigo": "TUC",
+    "nombre": "Teniente General Benjamin Matienzo",
+    "ubicacion": {
+      "ciudad": "San Miguel de Tucuman",
+      "provincia": "Tucuman"
+    }
+  }
+}
