@@ -1,4 +1,4 @@
 package clases;
 
-public class Administrador extends Persona{
+public class Administrador extends Empleado{
 }

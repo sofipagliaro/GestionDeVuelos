@@ -4,7 +4,7 @@ import enums.Puesto;
 
 import java.time.LocalDate;
 
-public class Empleado extends Persona{
+public class Empleado extends Usuario{
     private Puesto puesto;
     private LocalDate fechaIngreso;
 
@@ -28,6 +28,8 @@ public class Empleado extends Persona{
     public void setFechaIngreso(LocalDate fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
+
+
 
     @Override
     public String toString() {
