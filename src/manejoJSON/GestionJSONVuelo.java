@@ -36,20 +36,43 @@ public class GestionJSONVuelo {
         return mapaVuelos;
     }
 
-    public static Vuelo mapeoVuelo(JSONObject jVuelo, HashMap<String, Avion> mapaAviones, HashMap<String, Aeropuerto> mapaAeropuertos){
+    /// mari: complete el mapeo.
+    public static Vuelo mapeoVuelo(JSONObject jVuelo, HashMap<String, Avion> mapaAviones, HashMap<String, Aeropuerto> mapaAeropuertos) {
         Vuelo v = new Vuelo();
 
         try {
             v.setIdVuelo(jVuelo.getString("idVuelo"));
-            String codigoOrigen = jVuelo.getString("origen");
-            Aeropuerto origen = mapaAeropuertos.get(codigoOrigen);
 
-            /// NO LO TERMINE!!!
+            // Origen y destino
+            String codigoOrigen = jVuelo.getString("origen");
+            String codigoDestino = jVuelo.getString("destino");
+            v.setOrigen(mapaAeropuertos.get(codigoOrigen));
+            v.setDestino(mapaAeropuertos.get(codigoDestino));
+
+            // Fecha y duración
+            v.setFechaHora(LocalDateTime.parse(jVuelo.getString("fechaHora")));
+            v.setDuracion(jVuelo.getInt("duracion"));
+
+            // Avión
+            String idAvion = jVuelo.getString("idAvion");
+            v.setAvion(mapaAviones.get(idAvion));
+
+            // Asientos reservados (si existen)
+            JSONObject jAsientos = jVuelo.getJSONObject("asientosReservados");
+            HashMap<Integer, Boolean> mapaAsientos = new HashMap<>();
+            Iterator<String> keys = jAsientos.keys();
+            while (keys.hasNext()) {
+                String key = keys.next();
+                mapaAsientos.put(Integer.parseInt(key), jAsientos.getBoolean(key));
+            }
+            v.setAsientosReservados(mapaAsientos);
+
+            v.setPrecio(jVuelo.getDouble("precio"));
 
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
-
         return v;
     }
+
 }
