@@ -3374,8 +3374,8 @@
       }
     }
   },
-  "AV-G16": {
-    "idAvion": "AV-G16",
+  "AV-M16": {
+    "idAvion": "AV-M16",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -3581,8 +3581,8 @@
       }
     }
   },
-  "AV-G17": {
-    "idAvion": "AV-G17",
+  "AV-M17": {
+    "idAvion": "AV-M17",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -3788,8 +3788,8 @@
       }
     }
   },
-  "AV-G18": {
-    "idAvion": "AV-G18",
+  "AV-M18": {
+    "idAvion": "AV-M18",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -3995,8 +3995,8 @@
       }
     }
   },
-  "AV-G19": {
-    "idAvion": "AV-G19",
+  "AV-M19": {
+    "idAvion": "AV-M19",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -4202,8 +4202,8 @@
       }
     }
   },
-  "AV-G20": {
-    "idAvion": "AV-G20",
+  "AV-M20": {
+    "idAvion": "AV-M20",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -4409,8 +4409,8 @@
       }
     }
   },
-  "AV-G21": {
-    "idAvion": "AV-G21",
+  "AV-M21": {
+    "idAvion": "AV-M21",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -4616,8 +4616,8 @@
       }
     }
   },
-  "AV-G22": {
-    "idAvion": "AV-G22",
+  "AV-M22": {
+    "idAvion": "AV-M22",
     "estadoAvion": "EN_MANTENIMIENTO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -4823,8 +4823,8 @@
       }
     }
   },
-  "AV-G23": {
-    "idAvion": "AV-G23",
+  "AV-M23": {
+    "idAvion": "AV-M23",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -5030,8 +5030,8 @@
       }
     }
   },
-  "AV-G24": {
-    "idAvion": "AV-G24",
+  "AV-M24": {
+    "idAvion": "AV-M24",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {
@@ -5237,8 +5237,8 @@
       }
     }
   },
-  "AV-G25": {
-    "idAvion": "AV-G25",
+  "AV-M25": {
+    "idAvion": "AV-M25",
     "estadoAvion": "ACTIVO",
     "tamanioAvion": "MEDIANO",
     "mapaAsientos": {

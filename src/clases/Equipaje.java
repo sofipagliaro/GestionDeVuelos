@@ -35,4 +35,13 @@ public class Equipaje {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "Equipaje{" +
+                "tipoEquipaje=" + tipoEquipaje +
+                ", precio=" + precio +
+                ", cantidad=" + cantidad +
+                '}';
+    }
 }

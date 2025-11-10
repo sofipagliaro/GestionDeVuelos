@@ -47,4 +47,14 @@ public class Avion {
     public void setMapaAsientos(HashMap<Integer, Asiento> mapaAsientos) {
         this.mapaAsientos = mapaAsientos;
     }
+
+    @Override
+    public String toString() {
+        return "Avion{" +
+                "idAvion='" + idAvion + '\'' +
+                ", estadoAvion=" + estadoAvion +
+                ", tamanioAvion=" + tamanioAvion +
+                ", mapaAsientos=" + mapaAsientos +
+                '}';
+    }
 }

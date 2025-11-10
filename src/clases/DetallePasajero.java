@@ -44,4 +44,14 @@ public class DetallePasajero {
     public void setPrecioIndividual(double precioIndividual) {
         this.precioIndividual = precioIndividual;
     }
+
+    @Override
+    public String toString() {
+        return "DetallePasajero{" +
+                "pasajero=" + pasajero +
+                ", asientoAsignado=" + asientoAsignado +
+                ", listaEquipaje=" + listaEquipaje +
+                ", precioIndividual=" + precioIndividual +
+                '}';
+    }
 }

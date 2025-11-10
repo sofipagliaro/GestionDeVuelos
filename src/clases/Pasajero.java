@@ -24,4 +24,12 @@ public class Pasajero extends Persona{
     public void setPriorityPass(boolean priorityPass) {
         this.priorityPass = priorityPass;
     }
+
+    @Override
+    public String toString() {
+        return "Pasajero{" +
+                "assistCard=" + assistCard +
+                ", priorityPass=" + priorityPass +
+                "} " + super.toString();
+    }
 }

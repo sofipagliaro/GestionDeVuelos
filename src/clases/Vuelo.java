@@ -10,22 +10,22 @@ public class Vuelo {
     private LocalDateTime fechaHora;
     private int duracion;
     private Avion avion;
-    private HashMap<Integer, Boolean> disponibilidadAsientos;
+    private HashMap<Integer, Boolean> asientosReservados;
     private double precio;
 
     /// CONSTRUCTOR
     public Vuelo() {
     }
 
-    /// GETTERS Y SETTERS
-    public int getIdVuelo() {
+    public String getIdVuelo() {
         return idVuelo;
     }
 
-    public void setIdVuelo(int idVuelo) {
+    public void setIdVuelo(String idVuelo) {
         this.idVuelo = idVuelo;
     }
 
+    /// GETTERS Y SETTERS
     public Aeropuerto getOrigen() {
         return origen;
     }
@@ -66,12 +66,12 @@ public class Vuelo {
         this.avion = avion;
     }
 
-    public HashMap<Integer, Boolean> getDisponibilidadAsientos() {
-        return disponibilidadAsientos;
+    public HashMap<Integer, Boolean> getAsientosReservados() {
+        return asientosReservados;
     }
 
-    public void setDisponibilidadAsientos(HashMap<Integer, Boolean> disponibilidadAsientos) {
-        this.disponibilidadAsientos = disponibilidadAsientos;
+    public void setAsientosReservados(HashMap<Integer, Boolean> asientosReservados) {
+        this.asientosReservados = asientosReservados;
     }
 
     public double getPrecio() {
@@ -80,5 +80,19 @@ public class Vuelo {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Vuelo{" +
+                "idVuelo='" + idVuelo + '\'' +
+                ", origen=" + origen +
+                ", destino=" + destino +
+                ", fechaHora=" + fechaHora +
+                ", duracion=" + duracion +
+                ", avion=" + avion +
+                ", asientosReservados=" + asientosReservados +
+                ", precio=" + precio +
+                '}';
     }
 }

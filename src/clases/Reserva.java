@@ -74,4 +74,17 @@ public class Reserva {
     public void setPrecioTotal(double precioTotal) {
         this.precioTotal = precioTotal;
     }
+
+    @Override
+    public String toString() {
+        return "Reserva{" +
+                "idReserva=" + idReserva +
+                ", cliente=" + cliente +
+                ", metodoDePago=" + metodoDePago +
+                ", fechaHora=" + fechaHora +
+                ", vuelo=" + vuelo +
+                ", detallePasajero=" + detallePasajero +
+                ", precioTotal=" + precioTotal +
+                '}';
+    }
 }

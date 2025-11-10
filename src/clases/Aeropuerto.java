@@ -33,4 +33,13 @@ public class Aeropuerto {
     public void setUbicacion(Ubicacion ubicacion) {
         this.ubicacion = ubicacion;
     }
+
+    @Override
+    public String toString() {
+        return "Aeropuerto{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", ubicacion=" + ubicacion +
+                '}';
+    }
 }

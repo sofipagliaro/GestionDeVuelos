@@ -35,6 +35,15 @@ public class Asiento {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        return "Asiento{" +
+                "idAsiento=" + idAsiento +
+                ", tipoClase=" + tipoClase +
+                ", precio=" + precio +
+                '}';
+    }
 }
 
 
