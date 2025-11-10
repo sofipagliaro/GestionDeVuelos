@@ -2,7 +2,7 @@ package clases;
 
 import java.util.HashMap;
 
-public class Administrador extends Persona{
+public class Administrador extends Empleado{
     public Administrador() {
     }
 
