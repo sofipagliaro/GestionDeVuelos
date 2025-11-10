@@ -2,7 +2,6 @@ package manejoJSON;
 
 import clases.Aeropuerto;
 import clases.Avion;
-import clases.Ubicacion;
 import clases.Vuelo;
 import org.json.JSONException;
 import org.json.JSONObject;
