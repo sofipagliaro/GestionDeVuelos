@@ -1,10 +1,14 @@
 package clases;
 
+import enums.MetodoDePago;
 import enums.Puesto;
 
+import java.awt.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.HashMap;
 
-public class Empleado extends Persona{
+public class Empleado extends Persona {
     private Puesto puesto;
     private LocalDate fechaIngreso;
 
@@ -28,6 +32,32 @@ public class Empleado extends Persona{
     public void setFechaIngreso(LocalDate fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
+
+    public Reserva crearReserva(HashMap<Integer, Reserva> mapaReservas, int idReserva, Pasajero cliente, Vuelo vuelo, List<DetallePasajero> detallePasajero, MetodoDePago metodoDePago) {
+        Reserva reserva = new Reserva();
+        reserva.setIdReserva(idReserva);
+        reserva.setCliente(cliente);
+        reserva.setVuelo(vuelo);
+        reserva.setDetallePasajero(detallePasajero);
+        reserva.setMetodoDePago(metodoDePago);
+        reserva.setFechaHora(LocalDateTime.now());
+
+        // Calcular precio total (según los asientos del detalle)
+        double precioTotal = 0;
+        for (DetallePasajero d : detallePasajero) {
+            precioTotal += d.getPrecioIndividual();
+        }
+        reserva.setPrecioTotal(precioTotal);
+
+        // Guardar la reserva en el mapa
+        mapaReservas.put(idReserva, reserva);
+
+        System.out.println("✅ Reserva creada con éxito: " + idReserva);
+        return reserva;
+      }
+    }
+
+
 
     @Override
     public String toString() {
