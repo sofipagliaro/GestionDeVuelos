@@ -33,29 +33,6 @@ public class Empleado extends Persona {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public Reserva crearReserva(HashMap<Integer, Reserva> mapaReservas, int idReserva, Pasajero cliente, Vuelo vuelo, List<DetallePasajero> detallePasajero, MetodoDePago metodoDePago) {
-        Reserva reserva = new Reserva();
-        reserva.setIdReserva(idReserva);
-        reserva.setCliente(cliente);
-        reserva.setVuelo(vuelo);
-        reserva.setDetallePasajero(detallePasajero);
-        reserva.setMetodoDePago(metodoDePago);
-        reserva.setFechaHora(LocalDateTime.now());
-
-        // Calcular precio total (según los asientos del detalle)
-        double precioTotal = 0;
-        for (DetallePasajero d : detallePasajero) {
-            precioTotal += d.getPrecioIndividual();
-        }
-        reserva.setPrecioTotal(precioTotal);
-
-        // Guardar la reserva en el mapa
-        mapaReservas.put(idReserva, reserva);
-
-        System.out.println("✅ Reserva creada con éxito: " + idReserva);
-        return reserva;
-    }
-
 
     @Override
     public String toString() {

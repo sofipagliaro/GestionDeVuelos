@@ -30,28 +30,6 @@ public class Pasajero extends Persona{
         this.priorityPass = priorityPass;
     }
 
-    public List<Vuelo> buscarVuelosDisponibles(HashMap<String, Vuelo> mapaVuelos, String ciudadOrigen, String ciudadDestino, LocalDate fecha) {
-        List<Vuelo> vuelosDisponibles = new ArrayList<>();
-
-        for (Vuelo vuelo : mapaVuelos.values()) {
-
-            // Validar coincidencia de ciudad origen/destino
-            String origenVuelo = vuelo.getOrigen().getUbicacion().getCiudad();
-            String destinoVuelo = vuelo.getDestino().getUbicacion().getCiudad();
-
-            boolean coincideOrigen = origenVuelo.equalsIgnoreCase(ciudadOrigen);
-            boolean coincideDestino = destinoVuelo.equalsIgnoreCase(ciudadDestino);
-
-            // Validar coincidencia de fecha (solo día, no hora)
-            boolean coincideFecha = vuelo.getFechaHora().toLocalDate().isEqual(fecha);
-
-            if (coincideOrigen && coincideDestino && coincideFecha) {
-                vuelosDisponibles.add(vuelo);
-            }
-        }
-
-        return vuelosDisponibles;
-    }
 
     @Override
     public String toString() {
