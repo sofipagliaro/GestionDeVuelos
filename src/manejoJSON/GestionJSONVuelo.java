@@ -23,7 +23,7 @@ public class GestionJSONVuelo {
                 String idVuelo = clave.next();
                 JSONObject jVuelo = jVuelos.getJSONObject(idVuelo);
 
-                Vuelo v = mapeoVuelo(jVuelo);
+                Vuelo v = mapeoVuelo(jVuelo, mapaAviones, mapaAeropuertos);
                 mapaVuelos.put(idVuelo, v);
 
             }
