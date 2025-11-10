@@ -14,7 +14,7 @@ public class App {
         HashMap<String, Avion> mapaAviones = GestionJSONAvion.mapeoAviones();
         HashMap<String, Vuelo> mapaVuelos = GestionJSONVuelo.mapeoVuelos(mapaAviones, mapaAeropuertos);
 
-Vuelo v = new Vuelo();
+        Vuelo v = new Vuelo();
         int total = v.calcularTotalPasajeros(mapaVuelos);
 
         System.out.println(total);
