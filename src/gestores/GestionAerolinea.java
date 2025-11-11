@@ -382,4 +382,27 @@ public class GestionAerolinea {
     }
 
 
+    /// LOGIN
+
+    public Persona autenticarUsuario(String usuario, String password) throws InicioSesionInvalidoException {
+
+        HashMap<String, Persona> mapaPersonas = this.gestorPersonas.getMapaEntidades();
+
+        for (Persona persona : mapaPersonas.values()) {
+
+            if (persona.getUsuario().equals(usuario)) {
+
+                if (persona.getPassword().equals(password)) {
+                    return persona;
+                } else {
+
+                    throw new InicioSesionInvalidoException("Usuario o contraseña incorrectos.");
+                }
+            }
+        }
+
+        throw new InicioSesionInvalidoException("Usuario o contraseña incorrectos.");
+    }
+
+
 }
