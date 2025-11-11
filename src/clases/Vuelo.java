@@ -17,6 +17,17 @@ public class Vuelo {
     public Vuelo() {
     }
 
+    public Vuelo(String idVuelo, Aeropuerto origen, Aeropuerto destino, LocalDateTime fechaHora, int duracion, Avion avion, HashMap<Integer, Boolean> asientosReservados, double precio) {
+        this.idVuelo = idVuelo;
+        this.origen = origen;
+        this.destino = destino;
+        this.fechaHora = fechaHora;
+        this.duracion = duracion;
+        this.avion = avion;
+        this.asientosReservados = asientosReservados;
+        this.precio = precio;
+    }
+
     public String getIdVuelo() {
         return idVuelo;
     }

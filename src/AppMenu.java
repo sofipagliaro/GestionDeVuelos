@@ -1,22 +1,17 @@
-import clases.Administrador;
-import clases.Empleado;
-import clases.Pasajero;
-import clases.Persona;
+import clases.*;
 import gestores.GestionAerolinea;
-import manejoJSON.GestionJSONPersona;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Scanner;
-
-import static clases.GestionUsuario.*;
-//import static gestion.GestionUsuario.login;
+import java.util.Set;
 
 public class AppMenu {
 
     private static final Scanner sc = new Scanner(System.in);
+    private static GestionAerolinea gestor = new GestionAerolinea();
 
     public static void main(String[] args) {
-        GestionAerolinea gestor = new GestionAerolinea();
 
         System.out.println("====================================");
         System.out.println("  BIENVENIDO AL SISTEMA DE VUELOS  ");
@@ -33,15 +28,15 @@ public class AppMenu {
         if (persona instanceof Pasajero) {
             System.out.println("Bienvenido pasajero " + persona.getNombre());
             menuPasajero((Pasajero) persona);
-
-        } else if (persona instanceof Empleado) {
-            System.out.println("Bienvenido empleado " + persona.getNombre());
-            menuEmpleado((Empleado) persona);
-
         } else if (persona instanceof Administrador) {
             System.out.println("Bienvenido administrador " + persona.getNombre());
             menuAdministrador((Administrador) persona);
+        } else if (persona instanceof Empleado) {
+            System.out.println("Bienvenido empleado " + persona.getNombre());
+            menuEmpleado((Empleado) persona);
         }
+
+
     }
 
     public static void menuPasajero(Pasajero pasajero) {
@@ -73,8 +68,8 @@ public class AppMenu {
     }
 
     // ========================
-    // MENU EMPLEADO
-    // ========================
+// MENU EMPLEADO
+// ========================
     public static void menuEmpleado(Empleado empleado) {
         int opcion;
         do {
@@ -109,8 +104,8 @@ public class AppMenu {
     }
 
     // ========================
-    // MENU ADMINISTRADOR
-    // ========================
+// MENU ADMINISTRADOR
+// ========================
     public static void menuAdministrador(Administrador admin) {
         int opcion;
         do {
@@ -125,13 +120,99 @@ public class AppMenu {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("→ Creando vuelo...");
-                    // admin.crearVuelo();
+                    try {
+                        sc.nextLine();
+                        System.out.println("Ingrese la clave del vuelo");
+                        String idVuelo = sc.nextLine();
+
+                        System.out.print("Ingrese fecha y hora de partida (YYYY-MM-DDTHH:MM, ej: 2026-06-15T14:30): ");
+                        String fechaHoraStr = sc.nextLine();
+                        LocalDateTime fechaHora = LocalDateTime.parse(fechaHoraStr);
+
+                        System.out.print("Ingrese duración del vuelo en minutos: ");
+                        int duracion = sc.nextInt();
+
+                        System.out.print("Ingrese precio base del pasaje: ");
+                        double precio = sc.nextDouble();
+                        sc.nextLine();
+
+                        System.out.println("Ingrese el id del Avion al que quiere asignarle el vuelo. Estos son los ID disponibles");
+                        Set<String> idsAviones = gestor.leerTodosLosIdsAvion();
+                        for (String id : idsAviones) {
+                            System.out.println("ID: " + id); // Muestra el ID al usuario
+                        }
+                        String idAvion = sc.nextLine();
+
+                        System.out.println("Ingrese el id del Aeropuerto de origen. Estos son los ID disponibles");
+                        Set<String> idsAeropuertosOrigen = gestor.leerTodosLosIdsAeropuerto();
+                        for (String id : idsAeropuertosOrigen) {
+                            System.out.println("ID: " + id); // Muestra el ID al usuario
+                        }
+                        String idOrigen = sc.nextLine();
+
+                        System.out.println("Ingrese el id del Aeropuerto de destino. Estos son los ID disponibles");
+                        Set<String> idsAeropuertosDestino = gestor.leerTodosLosIdsAeropuerto();
+                        for (String id : idsAeropuertosDestino) {
+                            System.out.println("ID: " + id); // Muestra el ID al usuario
+                        }
+                        String idDestino = sc.nextLine();
+
+                        Vuelo nuevoVuelo = new Vuelo(idVuelo, null, null, fechaHora, duracion, null, new HashMap<>(), precio);
+
+                        System.out.println("→ Creando vuelo...");
+                        gestor.crearVuelo(idVuelo, idAvion, idOrigen, idDestino, nuevoVuelo);
+                    } catch (java.time.format.DateTimeParseException e) {
+                        System.out.println("ERROR: Formato de fecha/hora incorrecto. Use YYYY-MM-DDTHH:MM.");
+                    } catch (java.util.InputMismatchException e) {
+                        System.out.println("ERROR: Ingrese solo números para duración y precio.");
+                        sc.nextLine(); // Limpiar el buffer del Scanner
+                    } catch (excepciones.IdDuplicadoException e) {
+                        System.out.println("ERROR: Ya existe un vuelo con esa clave.");
+                    } catch (excepciones.IdNoExistenteException e) {
+                        System.out.println("ERROR: Uno de los IDs ingresados (Avión, Origen o Destino) no existe.");
+                    } catch (excepciones.ValorInvalidoException e) {
+                        System.out.println("ERROR DE VALIDACIÓN: " + e.getMessage());
+                    } catch (Exception e) {
+                        System.out.println("ERROR INESPERADO: " + e.getMessage());
+                    }
+
                     break;
                 case 2:
-                    System.out.println("→ Eliminando vuelo...");
-                    // admin.eliminarVuelo();
+                    sc.nextLine();
+                    String idVueloAEliminar = "";
+
+                    try {
+                        // 1. Mostrar IDs disponibles para ayudar al usuario
+                        System.out.println("IDs de Vuelos disponibles:");
+                        Set<String> idsVuelos = gestor.leerTodosLosIdsVuelo();
+
+                        if (idsVuelos.isEmpty()) {
+                            System.out.println("No hay vuelos registrados para eliminar.");
+                            break;
+                        }
+                        for (String id : idsVuelos) {
+                            System.out.println("ID Vuelo: " + id);
+                        }
+
+                        System.out.print("Ingrese el ID del vuelo a eliminar: ");
+                        idVueloAEliminar = sc.nextLine();
+
+                        System.out.print("→ Intentando eliminar vuelo " + idVueloAEliminar + "... ");
+
+                        gestor.eliminarVuelo(idVueloAEliminar);
+
+                        System.out.println("Operación completada.");
+
+                    } catch (excepciones.IdNoExistenteException e) {
+                        System.out.println("ERROR: El ID de vuelo ingresado no existe o no fue encontrado en el sistema.");
+                    } catch (excepciones.VueloConReservasException e) {
+                        System.out.println("❌ ERROR: " + e.getMessage());
+                    } catch (Exception e) {
+                        System.out.println("❌ ERROR INESPERADO: " + e.getMessage());
+                    }
                     break;
+
+
                 case 3:
                     System.out.println("→ Creando empleado...");
                     // admin.crearEmpleado();
