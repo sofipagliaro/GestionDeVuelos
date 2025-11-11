@@ -19,6 +19,17 @@ public class Reserva {
     public Reserva() {
     }
 
+    public Reserva(int idReserva, Pasajero pasajero, MetodoDePago metodoDePago, LocalDateTime fechaHora, Vuelo vuelo, int cantidad, List<DetallePasajero> detallePasajero, double precioTotal) {
+        this.idReserva = idReserva;
+        this.pasajero = pasajero;
+        this.metodoDePago = metodoDePago;
+        this.fechaHora = fechaHora;
+        this.vuelo = vuelo;
+        this.cantidad = cantidad;
+        this.detallePasajero = detallePasajero;
+        this.precioTotal = precioTotal;
+    }
+
     /// GETTERS Y SETTERS
     public int getIdReserva() {
         return idReserva;

@@ -15,6 +15,10 @@ public class ClaseGenerica<T> {
         this.mapaEntidades = new HashMap<>(mapaInicial);
     }
 
+    public String getNombreArchivo() {
+        return nombreArchivo;
+    }
+
     public void agregar(String clave, T objeto) {
         if (mapaEntidades.containsKey(clave)) {
             throw new IdDuplicadoException("La clave "+ clave + " ya se encuentra registrada, por lo que no es posible ingresarla como nueva.");
