@@ -1,10 +1,14 @@
 package clases;
 
+import enums.MetodoDePago;
 import enums.Puesto;
 
+import java.awt.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.HashMap;
 
-public class Empleado extends Usuario{
+public class Empleado extends Persona {
     private Puesto puesto;
     private LocalDate fechaIngreso;
 
@@ -28,7 +32,6 @@ public class Empleado extends Usuario{
     public void setFechaIngreso(LocalDate fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
-
 
 
     @Override
