@@ -1,6 +1,7 @@
 package clases;
 
 import excepciones.IdDuplicadoException;
+import excepciones.IdNoExistenteException;
 import manejoJSON.JSONUtiles;
 
 import java.util.HashMap;
@@ -18,11 +19,32 @@ public class ClaseGenerica<T> {
         if (mapaEntidades.containsKey(clave)) {
             throw new IdDuplicadoException("La clave "+ clave + " ya se encuentra registrada, por lo que no es posible ingresarla como nueva.");
         }
-
         mapaEntidades.put(clave, objeto);
-
         guardarJSON();
+    }
 
+    public T leer(String clave) throws IdNoExistenteException {
+        if (!mapaEntidades.containsKey(clave)) {
+            throw new IdNoExistenteException("La entidad con clave '" + clave + "' no fue encontrada.");
+        }
+        return mapaEntidades.get(clave);
+    }
+
+    public void actualizar(String clave, T objeto) {
+        if (!mapaEntidades.containsKey(clave)) {
+            throw new IdNoExistenteException("La entidad con clave '" + clave + "' no puede ser actualizada porque no existe.");
+        }
+        mapaEntidades.put(clave, objeto);
+        guardarJSON();
+    }
+
+    public void eliminar(String clave) {
+        if (!mapaEntidades.containsKey(clave)) {
+            throw new IdNoExistenteException("La entidad con clave '" + clave + "' no puede ser eliminada porque no existe.");
+        }
+
+        mapaEntidades.remove(clave);
+        guardarJSON();
     }
 
     private void guardarJSON() {
