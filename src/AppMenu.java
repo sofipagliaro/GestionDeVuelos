@@ -182,7 +182,6 @@ public class AppMenu {
                     String idVueloAEliminar = "";
 
                     try {
-                        // 1. Mostrar IDs disponibles para ayudar al usuario
                         System.out.println("IDs de Vuelos disponibles:");
                         Set<String> idsVuelos = gestor.leerTodosLosIdsVuelo();
 
@@ -206,9 +205,9 @@ public class AppMenu {
                     } catch (excepciones.IdNoExistenteException e) {
                         System.out.println("ERROR: El ID de vuelo ingresado no existe o no fue encontrado en el sistema.");
                     } catch (excepciones.VueloConReservasException e) {
-                        System.out.println("❌ ERROR: " + e.getMessage());
+                        System.out.println("ERROR: " + e.getMessage());
                     } catch (Exception e) {
-                        System.out.println("❌ ERROR INESPERADO: " + e.getMessage());
+                        System.out.println("ERROR INESPERADO: " + e.getMessage());
                     }
                     break;
 
