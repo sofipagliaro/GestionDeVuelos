@@ -1,4 +1,5 @@
 import clases.*;
+import gestores.GestionAerolinea;
 import manejoJSON.*;
 
 import java.util.HashMap;
@@ -15,8 +16,6 @@ public class App {
         HashMap<String, Reserva> mapaReservas = GestionJSONReserva.mapeoReservas(mapaPersonas, mapaVuelos);
 
         GestionAerolinea gestor = new GestionAerolinea();
-
-        System.out.println(gestor.);
 
         System.out.println(mapaReservas);
         System.out.println(mapaReservas.size());

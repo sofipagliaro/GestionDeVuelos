@@ -1,5 +1,6 @@
-package clases;
+package gestores;
 
+import clases.*;
 import enums.MetodoDePago;
 import excepciones.*;
 import manejoJSON.*;
