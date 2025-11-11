@@ -14,8 +14,6 @@ public class AppMenu {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Scanner sc2 = new Scanner(System.in);
-
 
         System.out.println("====================================");
         System.out.println("✈️  BIENVENIDO AL SISTEMA DE VUELOS ✈️");
@@ -23,8 +21,7 @@ public class AppMenu {
         System.out.print("Ingrese usuario: ");
         String usuario = sc.nextLine();
         System.out.print("Ingrese contraseña: ");
-        String password = sc2.nextLine();
-
+        String password = sc.nextLine();
 
         HashMap<String, Persona> mapaPersonas = GestionJSONPersona.mapeoPersonas();
 
