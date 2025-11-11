@@ -71,16 +71,10 @@ public class Pasajero extends Persona implements I_VerViajes {
         return reservas;
     }
 
-
-
-
     @Override
-    public List<Vuelo> verVuelos() {
-        return List.of();
-    }
-
-    @Override
-    public List<Reserva> verReservas() {
-        return List.of();
+    public String toString() {
+        return "Pasajero{" +
+                "reservas=" + reservas +
+                "} " + super.toString();
     }
 }
