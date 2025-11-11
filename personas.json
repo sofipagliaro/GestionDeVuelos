@@ -8,8 +8,8 @@
     "telefono": 1155550001,
     "email": "ana.garcia@aerolinea.com",
     "fechaNacimiento": "1985-06-15",
-    "usuario": "admin.agarcia",
-    "password": "AdminPass123!",
+    "usuario": "administrador",
+    "password": "administrador",
     "puesto": "ADMINISTRACION",
     "fechaIngreso": "2010-01-05"
   },
@@ -22,8 +22,8 @@
     "telefono": 1155550002,
     "email": "javi.rodriguez@aerolinea.com",
     "fechaNacimiento": "1992-11-20",
-    "usuario": "empl.jrodriguez",
-    "password": "EmplPass456!",
+    "usuario": "empleado",
+    "password": "empleado",
     "puesto": "ASISTENTE_VENTAS",
     "fechaIngreso": "2022-08-10"
   },
@@ -36,8 +36,8 @@
     "telefono": 1155550003,
     "email": "sofia.perez@mail.com",
     "fechaNacimiento": "1995-03-01",
-    "usuario": "user.pasajero03",
-    "password": "pass30000003"
+    "usuario": "pasajero",
+    "password": "pasajero"
   },
   "30000004": {
     "tipo": "PASAJERO",

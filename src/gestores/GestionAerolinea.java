@@ -10,6 +10,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 
 public class GestionAerolinea {
     private ClaseGenerica<Aeropuerto> gestorAeropuertos;
@@ -189,10 +190,21 @@ public class GestionAerolinea {
 
     /// VUELOS
 
-    public void crearVuelo(String idVueloClave, String idAvion, String idOrigen, String idDestino, Vuelo nuevoVuelo
-    ) throws IdDuplicadoException, IdNoExistenteException {
+    public void crearVuelo(String idVueloClave, String idAvion, String idOrigen, String idDestino, Vuelo nuevoVuelo) throws IdDuplicadoException, IdNoExistenteException {
 
         Avion avionAsignado = this.gestorAviones.leer(idAvion);
+
+        if (nuevoVuelo.getDuracion() <= 0) {
+            throw new ValorInvalidoException("La duración del vuelo debe ser un valor positivo.");
+        }
+        if (nuevoVuelo.getPrecio() <= 0) {
+            throw new ValorInvalidoException("El precio base debe ser un valor positivo.");
+        }
+
+        if (idOrigen.equalsIgnoreCase(idDestino)) {
+            throw new ValorInvalidoException("El aeropuerto de origen y el de destino no pueden ser el mismo.");
+        }
+
         Aeropuerto origen = this.gestorAeropuertos.leer(idOrigen);
         Aeropuerto destino = this.gestorAeropuertos.leer(idDestino);
 
@@ -402,6 +414,24 @@ public class GestionAerolinea {
         }
 
         throw new InicioSesionInvalidoException("Usuario o contraseña incorrectos.");
+    }
+
+
+    ///LECTURA
+    public Set<String> leerTodosLosIdsVuelo() {
+        return this.gestorVuelos.getMapaEntidades().keySet();
+    }
+
+    public Set<String> leerTodosLosIdsAvion() {
+        return this.gestorAviones.getMapaEntidades().keySet();
+    }
+
+    public Set<String> leerTodosLosIdsReserva() {
+        return this.gestorReservas.getMapaEntidades().keySet();
+    }
+
+    public Set<String> leerTodosLosIdsAeropuerto() {
+        return this.gestorAeropuertos.getMapaEntidades().keySet();
     }
 
 

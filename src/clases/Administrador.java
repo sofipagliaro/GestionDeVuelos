@@ -1,13 +1,14 @@
 package clases;
 
 import interfaces.I_VerViajes;
+
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 public class Administrador extends Empleado implements I_VerViajes {
-
-
 
     private List<Vuelo> vuelosGestionados;
     private List<Reserva> reservasRegistradas;
@@ -16,6 +17,8 @@ public class Administrador extends Empleado implements I_VerViajes {
         this.vuelosGestionados = new ArrayList<>();
         this.reservasRegistradas = new ArrayList<>();
     }
+
+    /// Getter y Setter:
     public List<Vuelo> getVuelosGestionados() {
         return vuelosGestionados;
     }
@@ -24,50 +27,52 @@ public class Administrador extends Empleado implements I_VerViajes {
         return reservasRegistradas;
     }
 
-    public void crearVuelo(HashMap<String, Vuelo> mapaVuelos, Vuelo vueloNuevo) {
-        if (mapaVuelos.containsKey(vueloNuevo.getIdVuelo())) {
-            System.out.println("Ya existe un vuelo con ese ID: " + vueloNuevo.getIdVuelo());
-        } else {
-            mapaVuelos.put(vueloNuevo.getIdVuelo(), vueloNuevo);
-            System.out.println("Vuelo creado correctamente: " + vueloNuevo.getIdVuelo());
-        }
-    }
-
-    public void eliminarVuelo(HashMap<String, Vuelo> mapaVuelos, String idVuelo) {
-        if (mapaVuelos.remove(idVuelo) != null) {
-            System.out.println("Vuelo eliminado correctamente: " + idVuelo);
-        } else {
-            System.out.println("No se encontró el vuelo con ID: " + idVuelo);
-        }
-    }
-
-    public void crearEmpleado(HashMap<String, Empleado> mapaEmpleados, Empleado empleadoNuevo) {
-        if (mapaEmpleados.containsKey(empleadoNuevo.getDni())) {
-            System.out.println("Ya existe un empleado con ese DNI: " + empleadoNuevo.getDni());
-        } else {
-            mapaEmpleados.put(empleadoNuevo.getDni(), empleadoNuevo);
-            System.out.println("Empleado creado correctamente: " + empleadoNuevo.getNombre());
-        }
-    }
-
-    public void eliminarEmpleado(HashMap<String, Empleado> mapaEmpleados, String dniEmpleado) {
-        if (mapaEmpleados.remove(dniEmpleado) != null) {
-            System.out.println("Empleado eliminado correctamente: " + dniEmpleado);
-        } else {
-            System.out.println("No se encontró el empleado con DNI: " + dniEmpleado);
-        }
-    }
-
-
     @Override
-    public
-    List<Vuelo> verVuelos() {
-        return vuelosGestionados;
+    public List<Vuelo> verVuelos() {
+        LocalDateTime ahora = LocalDateTime.now();
+
+        List<Vuelo> vuelosAntiguos = vuelosGestionados.stream()
+                .filter(vuelo -> vuelo.getFechaHora().isBefore(ahora))
+                .collect(Collectors.toList());
+
+        if (vuelosAntiguos.isEmpty()) {
+            System.out.println("No hay vuelos antiguos registrados.");
+        } else {
+            System.out.println("Vuelos antiguos gestionados:");
+            vuelosAntiguos.forEach(v ->
+                    System.out.println("ID: " + v.getIdVuelo() +
+                            " | Origen: " + v.getOrigen().getNombre() +
+                            " | Destino: " + v.getDestino().getNombre() +
+                            " | Fecha: " + v.getFechaHora())
+            );
+        }
+
+        return vuelosAntiguos;
     }
 
     @Override
     public List<Reserva> verReservas() {
+        if (reservasRegistradas.isEmpty()) {
+            System.out.println("No hay reservas registradas.");
+        } else {
+            System.out.println("Reservas creadas:");
+            for (Reserva r : reservasRegistradas) {
+                System.out.println("ID Reserva: " + r.getIdReserva() +
+                        " | Pasajero: " + r.getPasajero().getNombre() +
+                        " | Vuelo: " + r.getVuelo().getIdVuelo() +
+                        " | Fecha: " + r.getFechaHora() +
+                        " | Total: $" + r.getPrecioTotal());
+            }
+        }
+
         return reservasRegistradas;
     }
 
+    @Override
+    public String toString() {
+        return "Administrador{" +
+                "vuelosGestionados=" + vuelosGestionados +
+                ", reservasRegistradas=" + reservasRegistradas +
+                "} " + super.toString();
+    }
 }

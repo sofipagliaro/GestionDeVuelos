@@ -1,148 +1,653 @@
 {
-  "VUELO-P-01": {
-    "idVuelo": "VUELO-P-01",
-    "origen": "COR",
-    "destino": "EZE",
-    "fechaHora": "2025-10-02 08:30:00",
-    "duracion": 105,
-    "avion": "AV-C2",
-    "asientosReservados": {
-      "1": true,
-      "2": true,
-      "3": true,
-      "4": true
+    "13": {
+        "precio": 20,
+        "fechaHora": "2026-06-15T14:30",
+        "asientosReservados": {},
+        "duracion": 34,
+        "idVuelo": "13",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Parana",
+                "provincia": "Entre Rios"
+            },
+            "codigo": "PRA",
+            "nombre": "General Justo Jose de Urquiza"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Rosario",
+                "provincia": "Santa Fe"
+            },
+            "codigo": "ROS",
+            "nombre": "Islas Malvinas"
+        },
+        "avion": {
+            "idAvion": "AV-C10",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 20000,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 50000,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 85876.54,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 85876.54,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
     },
-    "precio": 235000
-  },
-  "VUELO-P-02": {
-    "idVuelo": "VUELO-P-02",
-    "origen": "BRC",
-    "destino": "AEP",
-    "fechaHora": "2025-10-04 19:00:00",
-    "duracion": 202,
-    "avion": "AV-C3",
-    "asientosReservados": {
-      "1": true,
-      "2": true,
-      "3": true,
-      "4": true
+    "VUELO-P-04": {
+        "precio": 280000,
+        "fechaHora": "2025-10-08T09:30",
+        "asientosReservados": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true
+        },
+        "duracion": 240,
+        "idVuelo": "VUELO-P-04",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Salta",
+                "provincia": "Salta"
+            },
+            "codigo": "SLA",
+            "nombre": "General Martin Miguel de Guemes"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Ezeiza",
+                "provincia": "Buenos Aires"
+            },
+            "codigo": "EZE",
+            "nombre": "Aeropuerto Internacional Ministro Pistarini"
+        },
+        "avion": {
+            "idAvion": "AV-C6",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 20455.5,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 51108.66,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 85566.62,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 85566.62,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
     },
-    "precio": 267500
-  },
-  "VUELO-P-03": {
-    "idVuelo": "VUELO-P-03",
-    "origen": "MDZ",
-    "destino": "EZE",
-    "fechaHora": "2025-10-06 12:00:00",
-    "duracion": 150,
-    "avion": "AV-C5",
-    "asientosReservados": {
-      "1": true,
-      "2": true,
-      "3": true,
-      "4": true
+    "VUELO-F-06": {
+        "precio": 250000,
+        "fechaHora": "2025-11-12T13:00",
+        "asientosReservados": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true
+        },
+        "duracion": 150,
+        "idVuelo": "VUELO-F-08",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Mendoza",
+                "provincia": "Mendoza"
+            },
+            "codigo": "MDZ",
+            "nombre": "Gobernador Francisco Gabrielli - El Plumerillo"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Ezeiza",
+                "provincia": "Buenos Aires"
+            },
+            "codigo": "EZE",
+            "nombre": "Aeropuerto Internacional Ministro Pistarini"
+        },
+        "avion": {
+            "idAvion": "AV-C8",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 20603.88,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 52504.6,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 84149.2,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 84149.2,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
     },
-    "precio": 250000
-  },
-
-  "VUELO-P-04": {
-    "idVuelo": "VUELO-P-04",
-    "origen": "SLA",
-    "destino": "EZE",
-    "fechaHora": "2025-10-08 09:30:00",
-    "duracion": 240,
-    "avion": "AV-C6",
-    "asientosReservados": {
-      "1": true,
-      "2": true,
-      "3": true,
-      "4": true
+    "VUELO-P-03": {
+        "precio": 250000,
+        "fechaHora": "2025-10-06T12:00",
+        "asientosReservados": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true
+        },
+        "duracion": 150,
+        "idVuelo": "VUELO-P-03",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Mendoza",
+                "provincia": "Mendoza"
+            },
+            "codigo": "MDZ",
+            "nombre": "Gobernador Francisco Gabrielli - El Plumerillo"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Ezeiza",
+                "provincia": "Buenos Aires"
+            },
+            "codigo": "EZE",
+            "nombre": "Aeropuerto Internacional Ministro Pistarini"
+        },
+        "avion": {
+            "idAvion": "AV-C5",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 20088.08,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 54406.84,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 80000,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 80000,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
     },
-    "precio": 280000
-  },
-  "VUELO-P-05": {
-    "idVuelo": "VUELO-P-05",
-    "origen": "EZE",
-    "destino": "COR",
-    "fechaHora": "2025-10-09 11:00:00",
-    "duracion": 105,
-    "avion": "AV-M7",
-    "asientosReservados": {
-      "1": true,
-      "2": true,
-      "3": true,
-      "4": true,
-      "5": true,
-      "6": true,
-      "7": true,
-      "8": true,
-      "9": true,
-      "10": true,
-      "11": true,
-      "12": true,
-      "13": false,
-      "14": false,
-      "15": false,
-      "16": false,
-      "17": false,
-      "18": false,
-      "19": false,
-      "20": false,
-      "21": false,
-      "22": false,
-      "23": false,
-      "24": false,
-      "25": false,
-      "26": false,
-      "27": false,
-      "28": false,
-      "29": false,
-      "30": false,
-      "31": false,
-      "32": false,
-      "33": false,
-      "34": false,
-      "35": false,
-      "36": false,
-      "37": false,
-      "38": false,
-      "39": false,
-      "40": false
+    "VUELO-P-05": {
+        "precio": 235000,
+        "fechaHora": "2025-10-09T11:00",
+        "asientosReservados": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": true,
+            "9": true,
+            "10": true,
+            "11": true,
+            "12": true,
+            "13": false,
+            "14": false,
+            "15": false,
+            "16": false,
+            "17": false,
+            "18": false,
+            "19": false,
+            "20": false,
+            "21": false,
+            "22": false,
+            "23": false,
+            "24": false,
+            "25": false,
+            "26": false,
+            "27": false,
+            "28": false,
+            "29": false,
+            "30": false,
+            "31": false,
+            "32": false,
+            "33": false,
+            "34": false,
+            "35": false,
+            "36": false,
+            "37": false,
+            "38": false,
+            "39": false,
+            "40": false
+        },
+        "duracion": 105,
+        "idVuelo": "VUELO-P-05",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Ezeiza",
+                "provincia": "Buenos Aires"
+            },
+            "codigo": "EZE",
+            "nombre": "Aeropuerto Internacional Ministro Pistarini"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Cordoba",
+                "provincia": "Cordoba"
+            },
+            "codigo": "COR",
+            "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
+        },
+        "avion": {
+            "idAvion": "AV-M7",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "5": {
+                    "idAsiento": 5,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "6": {
+                    "idAsiento": 6,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "7": {
+                    "idAsiento": 7,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "8": {
+                    "idAsiento": 8,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "9": {
+                    "idAsiento": 9,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "10": {
+                    "idAsiento": 10,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "11": {
+                    "idAsiento": 11,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "12": {
+                    "idAsiento": 12,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "13": {
+                    "idAsiento": 13,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "14": {
+                    "idAsiento": 14,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "15": {
+                    "idAsiento": 15,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "16": {
+                    "idAsiento": 16,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "17": {
+                    "idAsiento": 17,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "18": {
+                    "idAsiento": 18,
+                    "precio": 10051.48,
+                    "tipoClase": {}
+                },
+                "19": {
+                    "idAsiento": 19,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "20": {
+                    "idAsiento": 20,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "21": {
+                    "idAsiento": 21,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "22": {
+                    "idAsiento": 22,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "23": {
+                    "idAsiento": 23,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "24": {
+                    "idAsiento": 24,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "25": {
+                    "idAsiento": 25,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "26": {
+                    "idAsiento": 26,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "27": {
+                    "idAsiento": 27,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "28": {
+                    "idAsiento": 28,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "29": {
+                    "idAsiento": 29,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "30": {
+                    "idAsiento": 30,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "31": {
+                    "idAsiento": 31,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "32": {
+                    "idAsiento": 32,
+                    "precio": 27289.4,
+                    "tipoClase": {}
+                },
+                "33": {
+                    "idAsiento": 33,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                },
+                "34": {
+                    "idAsiento": 34,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                },
+                "35": {
+                    "idAsiento": 35,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                },
+                "36": {
+                    "idAsiento": 36,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                },
+                "37": {
+                    "idAsiento": 37,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                },
+                "38": {
+                    "idAsiento": 38,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                },
+                "39": {
+                    "idAsiento": 39,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                },
+                "40": {
+                    "idAsiento": 40,
+                    "precio": 40321.61,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
     },
-    "precio": 235000
-  },
-
-  "VUELO-F-06": {
-    "idVuelo": "VUELO-F-08",
-    "origen": "MDZ",
-    "destino": "EZE",
-    "fechaHora": "2025-11-12 13:00:00",
-    "duracion": 150,
-    "avion": "AV-C8",
-    "asientosReservados": {
-      "1": true,
-      "2": true,
-      "3": true,
-      "4": true
+    "VUELO-F-07": {
+        "precio": 235000,
+        "fechaHora": "2025-11-14T06:00",
+        "asientosReservados": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true
+        },
+        "duracion": 105,
+        "idVuelo": "VUELO-F-10",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Cordoba",
+                "provincia": "Cordoba"
+            },
+            "codigo": "COR",
+            "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Ciudad Autonoma de Buenos Aires",
+                "provincia": "Ciudad Autonoma de Buenos Aires"
+            },
+            "codigo": "AEP",
+            "nombre": "Aeroparque Jorge Newbery"
+        },
+        "avion": {
+            "idAvion": "AV-C9",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 20042.84,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 50000,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 80000,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 80000,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
     },
-    "precio": 250000
-  },
-
-  "VUELO-F-07": {
-    "idVuelo": "VUELO-F-10",
-    "origen": "COR",
-    "destino": "AEP",
-    "fechaHora": "2025-11-14 06:00:00",
-    "duracion": 105,
-    "avion": "AV-C9",
-    "asientosReservados": {
-      "1": true,
-      "2": true,
-      "3": true,
-      "4": true
+    "VUELO-P-02": {
+        "precio": 267500,
+        "fechaHora": "2025-10-04T19:00",
+        "asientosReservados": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true
+        },
+        "duracion": 202,
+        "idVuelo": "VUELO-P-02",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "San Carlos de Bariloche",
+                "provincia": "Rio Negro"
+            },
+            "codigo": "BRC",
+            "nombre": "Teniente Luis Candelaria"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Ciudad Autonoma de Buenos Aires",
+                "provincia": "Ciudad Autonoma de Buenos Aires"
+            },
+            "codigo": "AEP",
+            "nombre": "Aeroparque Jorge Newbery"
+        },
+        "avion": {
+            "idAvion": "AV-C3",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 20170.8,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 52719.14,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 86321.46,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 86321.46,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
     },
-    "precio": 235000
-  },
-
-
+    "VUELO-P-01": {
+        "precio": 235000,
+        "fechaHora": "2025-10-02T08:30",
+        "asientosReservados": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true
+        },
+        "duracion": 105,
+        "idVuelo": "VUELO-P-01",
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Cordoba",
+                "provincia": "Cordoba"
+            },
+            "codigo": "COR",
+            "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
+        },
+        "destino": {
+            "ubicacion": {
+                "ciudad": "Ezeiza",
+                "provincia": "Buenos Aires"
+            },
+            "codigo": "EZE",
+            "nombre": "Aeropuerto Internacional Ministro Pistarini"
+        },
+        "avion": {
+            "idAvion": "AV-C2",
+            "estadoAvion": {},
+            "mapaAsientos": {
+                "1": {
+                    "idAsiento": 1,
+                    "precio": 20498.48,
+                    "tipoClase": {}
+                },
+                "2": {
+                    "idAsiento": 2,
+                    "precio": 52670.3,
+                    "tipoClase": {}
+                },
+                "3": {
+                    "idAsiento": 3,
+                    "precio": 80193.36,
+                    "tipoClase": {}
+                },
+                "4": {
+                    "idAsiento": 4,
+                    "precio": 80193.36,
+                    "tipoClase": {}
+                }
+            },
+            "tamanioAvion": {}
+        }
+    }
 }
