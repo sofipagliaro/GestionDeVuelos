@@ -16,6 +16,12 @@ public class Empleado extends Persona {
     public Empleado() {
     }
 
+    public Empleado(String dni, String nombre, String apellido, String direccion, long telefono, String email, LocalDate fechaNacimiento, String usuario, String password, Puesto puesto, LocalDate fechaIngreso) {
+        super(dni, nombre, apellido, direccion, telefono, email, fechaNacimiento, usuario, password);
+        this.puesto = puesto;
+        this.fechaIngreso = fechaIngreso;
+    }
+
     /// GETTERS Y SETTERS
     public Puesto getPuesto() {
         return puesto;

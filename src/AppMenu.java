@@ -1,6 +1,8 @@
 import clases.*;
+import enums.Puesto;
 import gestores.GestionAerolinea;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -213,13 +215,91 @@ public class AppMenu {
 
 
                 case 3:
-                    System.out.println("→ Creando empleado...");
-                    // admin.crearEmpleado();
+                    sc.nextLine();
+                    try {
+
+                        sc.nextLine();
+                        System.out.println("Ingrese el dni del empleado");
+                        String dni = sc.nextLine();
+
+                        System.out.print("Ingrese nombre del empleado: ");
+                        String nombre = sc.nextLine();
+
+                        System.out.println("Ingrese el apellido del empleado");
+                        String apellido = sc.nextLine();
+
+                        System.out.print("Ingrese direccion del empleado: ");
+                        String direccion = sc.nextLine();
+
+                        System.out.println("Ingrese el telefono del empleado");
+                        long telefono = sc.nextLong();
+                        sc.nextLine();
+
+                        System.out.print("Ingrese email del empleado: ");
+                        String email = sc.nextLine();
+
+                        System.out.print("Ingrese fecha y hora de nacimiento (YYYY-MM-DD, ej: 1995-03-01): ");
+                        String fechaNacimiento = sc.nextLine();
+                        LocalDate fechaNac = LocalDate.parse(fechaNacimiento);
+
+                        System.out.println("Ingrese el usuario del empleado");
+                        String usuario = sc.nextLine();
+
+                        System.out.print("Ingrese password del empleado: ");
+                        String password = sc.nextLine();
+
+                        System.out.println("Ingrese la fecha de ingreso del empleado");
+                        String fechaIngreso = sc.nextLine();
+                        LocalDate fechaIngr = LocalDate.parse(fechaIngreso);
+
+                        Empleado empleado = new Empleado(dni, nombre, apellido, direccion, telefono, email, fechaNac, usuario, password, Puesto.ASISTENTE_VENTAS, fechaIngr);
+
+                        System.out.println("→ Creando empleado...");
+                        gestor.crearPersona(dni, empleado);
+
+                        System.out.println("Empleado creado con éxito.");
+
+                    } catch (java.time.format.DateTimeParseException e) {
+                        System.out.println("ERROR: Formato de fecha incorrecto. Use YYYY-MM-DD.");
+                    } catch (java.util.InputMismatchException e) {
+                        System.out.println("ERROR: Ingrese solo números válidos (sin letras) para el teléfono.");
+                        sc.nextLine();
+                    } catch (excepciones.IdDuplicadoException e) {
+                        System.out.println("ERROR: Ya existe una persona con ese DNI.");
+                    } catch (Exception e) {
+                        System.out.println("ERROR INESPERADO: " + e.getMessage());
+                    }
                     break;
                 case 4:
-                    System.out.println("→ Eliminando empleado...");
-                    // admin.eliminarEmpleado();
+                    sc.nextLine();
+                    try {
+                        System.out.println("\n--- ELIMINAR EMPLEADO ---");
+
+                        System.out.print("Ingrese el DNI de la persona/empleado a eliminar: ");
+                        String dniAEliminar = sc.nextLine();
+
+                        System.out.println("→ Intentando eliminar empleado con DNI: " + dniAEliminar + "...");
+
+                        Persona personaAEliminar = gestor.obtenerPersonaPorId(dniAEliminar);
+
+                        if (personaAEliminar instanceof Empleado || personaAEliminar instanceof Administrador) {
+
+                            System.out.println("→ Intentando eliminar empleado con DNI: " + dniAEliminar + "...");
+
+                            gestor.eliminarPersona(dniAEliminar);
+
+                            System.out.println("El empleado con DNI " + dniAEliminar + " ha sido eliminado con éxito.");
+
+                        } else {
+                            System.out.println("ERROR: La persona con DNI " + dniAEliminar + " es un Pasajero. Solo se pueden eliminar Empleados o Administradores desde este menú.");
+                        }
+                    } catch (excepciones.IdNoExistenteException e) {
+                        System.out.println("ERROR: No se encontró ninguna persona/empleado con el DNI ingresado.");
+                    } catch (Exception e) {
+                        System.out.println("ERROR INESPERADO: " + e.getMessage());
+                    }
                     break;
+
                 case 5:
                     System.out.println("→ Cerrando sesión...");
                     break;

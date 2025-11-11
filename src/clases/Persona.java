@@ -17,6 +17,18 @@ public abstract class Persona {
     public Persona() {
     }
 
+    public Persona(String dni, String nombre, String apellido, String direccion, long telefono, String email, LocalDate fechaNacimiento, String usuario, String password) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.email = email;
+        this.fechaNacimiento = fechaNacimiento;
+        this.usuario = usuario;
+        this.password = password;
+    }
+
     /// GETTERS Y SETTERS
     public String getDni() {
         return dni;

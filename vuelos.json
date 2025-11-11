@@ -9,15 +9,6 @@
             "4": true
         },
         "duracion": 240,
-        "idVuelo": "VUELO-P-04",
-        "origen": {
-            "ubicacion": {
-                "ciudad": "Salta",
-                "provincia": "Salta"
-            },
-            "codigo": "SLA",
-            "nombre": "General Martin Miguel de Guemes"
-        },
         "destino": {
             "ubicacion": {
                 "ciudad": "Ezeiza",
@@ -26,9 +17,19 @@
             "codigo": "EZE",
             "nombre": "Aeropuerto Internacional Ministro Pistarini"
         },
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Salta",
+                "provincia": "Salta"
+            },
+            "codigo": "SLA",
+            "nombre": "General Martin Miguel de Guemes"
+        },
+        "idVuelo": "VUELO-P-04",
         "avion": {
             "idAvion": "AV-C6",
             "estadoAvion": {},
+            "tamanioAvion": {},
             "mapaAsientos": {
                 "1": {
                     "idAsiento": 1,
@@ -50,8 +51,7 @@
                     "precio": 85566.62,
                     "tipoClase": {}
                 }
-            },
-            "tamanioAvion": {}
+            }
         }
     },
     "VUELO-F-06": {
@@ -64,15 +64,6 @@
             "4": true
         },
         "duracion": 150,
-        "idVuelo": "VUELO-F-08",
-        "origen": {
-            "ubicacion": {
-                "ciudad": "Mendoza",
-                "provincia": "Mendoza"
-            },
-            "codigo": "MDZ",
-            "nombre": "Gobernador Francisco Gabrielli - El Plumerillo"
-        },
         "destino": {
             "ubicacion": {
                 "ciudad": "Ezeiza",
@@ -81,9 +72,19 @@
             "codigo": "EZE",
             "nombre": "Aeropuerto Internacional Ministro Pistarini"
         },
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Mendoza",
+                "provincia": "Mendoza"
+            },
+            "codigo": "MDZ",
+            "nombre": "Gobernador Francisco Gabrielli - El Plumerillo"
+        },
+        "idVuelo": "VUELO-F-08",
         "avion": {
             "idAvion": "AV-C8",
             "estadoAvion": {},
+            "tamanioAvion": {},
             "mapaAsientos": {
                 "1": {
                     "idAsiento": 1,
@@ -105,8 +106,7 @@
                     "precio": 84149.2,
                     "tipoClase": {}
                 }
-            },
-            "tamanioAvion": {}
+            }
         }
     },
     "VUELO-P-03": {
@@ -119,15 +119,6 @@
             "4": true
         },
         "duracion": 150,
-        "idVuelo": "VUELO-P-03",
-        "origen": {
-            "ubicacion": {
-                "ciudad": "Mendoza",
-                "provincia": "Mendoza"
-            },
-            "codigo": "MDZ",
-            "nombre": "Gobernador Francisco Gabrielli - El Plumerillo"
-        },
         "destino": {
             "ubicacion": {
                 "ciudad": "Ezeiza",
@@ -136,9 +127,19 @@
             "codigo": "EZE",
             "nombre": "Aeropuerto Internacional Ministro Pistarini"
         },
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Mendoza",
+                "provincia": "Mendoza"
+            },
+            "codigo": "MDZ",
+            "nombre": "Gobernador Francisco Gabrielli - El Plumerillo"
+        },
+        "idVuelo": "VUELO-P-03",
         "avion": {
             "idAvion": "AV-C5",
             "estadoAvion": {},
+            "tamanioAvion": {},
             "mapaAsientos": {
                 "1": {
                     "idAsiento": 1,
@@ -160,8 +161,7 @@
                     "precio": 80000,
                     "tipoClase": {}
                 }
-            },
-            "tamanioAvion": {}
+            }
         }
     },
     "VUELO-P-05": {
@@ -210,15 +210,6 @@
             "40": false
         },
         "duracion": 105,
-        "idVuelo": "VUELO-P-05",
-        "origen": {
-            "ubicacion": {
-                "ciudad": "Ezeiza",
-                "provincia": "Buenos Aires"
-            },
-            "codigo": "EZE",
-            "nombre": "Aeropuerto Internacional Ministro Pistarini"
-        },
         "destino": {
             "ubicacion": {
                 "ciudad": "Cordoba",
@@ -227,9 +218,19 @@
             "codigo": "COR",
             "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
         },
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Ezeiza",
+                "provincia": "Buenos Aires"
+            },
+            "codigo": "EZE",
+            "nombre": "Aeropuerto Internacional Ministro Pistarini"
+        },
+        "idVuelo": "VUELO-P-05",
         "avion": {
             "idAvion": "AV-M7",
             "estadoAvion": {},
+            "tamanioAvion": {},
             "mapaAsientos": {
                 "1": {
                     "idAsiento": 1,
@@ -431,8 +432,7 @@
                     "precio": 40321.61,
                     "tipoClase": {}
                 }
-            },
-            "tamanioAvion": {}
+            }
         }
     },
     "VUELO-F-07": {
@@ -445,15 +445,6 @@
             "4": true
         },
         "duracion": 105,
-        "idVuelo": "VUELO-F-10",
-        "origen": {
-            "ubicacion": {
-                "ciudad": "Cordoba",
-                "provincia": "Cordoba"
-            },
-            "codigo": "COR",
-            "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
-        },
         "destino": {
             "ubicacion": {
                 "ciudad": "Ciudad Autonoma de Buenos Aires",
@@ -462,9 +453,19 @@
             "codigo": "AEP",
             "nombre": "Aeroparque Jorge Newbery"
         },
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Cordoba",
+                "provincia": "Cordoba"
+            },
+            "codigo": "COR",
+            "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
+        },
+        "idVuelo": "VUELO-F-10",
         "avion": {
             "idAvion": "AV-C9",
             "estadoAvion": {},
+            "tamanioAvion": {},
             "mapaAsientos": {
                 "1": {
                     "idAsiento": 1,
@@ -486,8 +487,7 @@
                     "precio": 80000,
                     "tipoClase": {}
                 }
-            },
-            "tamanioAvion": {}
+            }
         }
     },
     "VUELO-P-02": {
@@ -500,15 +500,6 @@
             "4": true
         },
         "duracion": 202,
-        "idVuelo": "VUELO-P-02",
-        "origen": {
-            "ubicacion": {
-                "ciudad": "San Carlos de Bariloche",
-                "provincia": "Rio Negro"
-            },
-            "codigo": "BRC",
-            "nombre": "Teniente Luis Candelaria"
-        },
         "destino": {
             "ubicacion": {
                 "ciudad": "Ciudad Autonoma de Buenos Aires",
@@ -517,9 +508,19 @@
             "codigo": "AEP",
             "nombre": "Aeroparque Jorge Newbery"
         },
+        "origen": {
+            "ubicacion": {
+                "ciudad": "San Carlos de Bariloche",
+                "provincia": "Rio Negro"
+            },
+            "codigo": "BRC",
+            "nombre": "Teniente Luis Candelaria"
+        },
+        "idVuelo": "VUELO-P-02",
         "avion": {
             "idAvion": "AV-C3",
             "estadoAvion": {},
+            "tamanioAvion": {},
             "mapaAsientos": {
                 "1": {
                     "idAsiento": 1,
@@ -541,8 +542,7 @@
                     "precio": 86321.46,
                     "tipoClase": {}
                 }
-            },
-            "tamanioAvion": {}
+            }
         }
     },
     "VUELO-P-01": {
@@ -555,15 +555,6 @@
             "4": true
         },
         "duracion": 105,
-        "idVuelo": "VUELO-P-01",
-        "origen": {
-            "ubicacion": {
-                "ciudad": "Cordoba",
-                "provincia": "Cordoba"
-            },
-            "codigo": "COR",
-            "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
-        },
         "destino": {
             "ubicacion": {
                 "ciudad": "Ezeiza",
@@ -572,9 +563,19 @@
             "codigo": "EZE",
             "nombre": "Aeropuerto Internacional Ministro Pistarini"
         },
+        "origen": {
+            "ubicacion": {
+                "ciudad": "Cordoba",
+                "provincia": "Cordoba"
+            },
+            "codigo": "COR",
+            "nombre": "Ingeniero Aeronautico Ambrosio Taravella"
+        },
+        "idVuelo": "VUELO-P-01",
         "avion": {
             "idAvion": "AV-C2",
             "estadoAvion": {},
+            "tamanioAvion": {},
             "mapaAsientos": {
                 "1": {
                     "idAsiento": 1,
@@ -596,8 +597,7 @@
                     "precio": 80193.36,
                     "tipoClase": {}
                 }
-            },
-            "tamanioAvion": {}
+            }
         }
     }
 }
