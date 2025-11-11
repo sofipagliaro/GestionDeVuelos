@@ -8,7 +8,10 @@ public abstract class Persona {
     private String apellido;
     private String direccion;
     private long telefono;
+    private String email;
     private LocalDate fechaNacimiento;
+    private String usuario;
+    private String password;
 
     /// CONSTRUCTOR
     public Persona() {
@@ -64,6 +67,29 @@ public abstract class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     @Override
     public String toString() {
@@ -73,7 +99,10 @@ public abstract class Persona {
                 ", apellido='" + apellido + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", telefono=" + telefono +
+                ", email='" + email + '\'' +
                 ", fechaNacimiento=" + fechaNacimiento +
+                ", usuario='" + usuario + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
