@@ -192,8 +192,6 @@ public class GestionAerolinea {
 
     public void crearVuelo(String idVueloClave, String idAvion, String idOrigen, String idDestino, Vuelo nuevoVuelo) throws IdDuplicadoException, IdNoExistenteException {
 
-        Avion avionAsignado = this.gestorAviones.leer(idAvion);
-
         if (nuevoVuelo.getDuracion() <= 0) {
             throw new ValorInvalidoException("La duración del vuelo debe ser un valor positivo.");
         }
@@ -205,8 +203,11 @@ public class GestionAerolinea {
             throw new ValorInvalidoException("El aeropuerto de origen y el de destino no pueden ser el mismo.");
         }
 
+        Avion avionAsignado = this.gestorAviones.leer(idAvion);
         Aeropuerto origen = this.gestorAeropuertos.leer(idOrigen);
         Aeropuerto destino = this.gestorAeropuertos.leer(idDestino);
+
+        nuevoVuelo.setIdVuelo(idVueloClave);
 
         nuevoVuelo.setAvion(avionAsignado);
         nuevoVuelo.setOrigen(origen);

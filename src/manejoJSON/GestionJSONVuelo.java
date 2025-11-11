@@ -13,7 +13,7 @@ import java.util.Iterator;
 
 public class GestionJSONVuelo {
 
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
 
     public static HashMap<String, Vuelo> mapeoVuelos(HashMap<String, Avion> mapaAviones, HashMap<String, Aeropuerto> mapaAeropuertos) {
         HashMap<String, Vuelo> mapaVuelos = new HashMap<>();
@@ -46,8 +46,10 @@ public class GestionJSONVuelo {
             v.setIdVuelo(jVuelo.getString("idVuelo"));
 
             // Origen y destino
-            String codigoOrigen = jVuelo.getString("origen");
-            String codigoDestino = jVuelo.getString("destino");
+            JSONObject jOrigen = jVuelo.getJSONObject("origen");
+            String codigoOrigen = jOrigen.getString("codigo");
+            JSONObject jDestino = jVuelo.getJSONObject("destino");
+            String codigoDestino = jDestino.getString("codigo");
             v.setOrigen(mapaAeropuertos.get(codigoOrigen));
             v.setDestino(mapaAeropuertos.get(codigoDestino));
 
@@ -57,7 +59,8 @@ public class GestionJSONVuelo {
             v.setDuracion(jVuelo.getInt("duracion"));
 
             // Avión
-            String idAvion = jVuelo.getString("avion");
+            JSONObject jAvion = jVuelo.getJSONObject("avion");
+            String idAvion = jAvion.getString("idAvion");
             v.setAvion(mapaAviones.get(idAvion));
 
             // Asientos reservados (si existen)
