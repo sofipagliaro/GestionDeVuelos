@@ -7,10 +7,11 @@ import java.util.List;
 
 public class Reserva {
     private int idReserva;
-    private Pasajero cliente;
+    private Pasajero pasajero;
     private MetodoDePago metodoDePago;
     private LocalDateTime fechaHora;
     private Vuelo vuelo;
+    private int cantidad;
     private List<DetallePasajero> detallePasajero;
     private double precioTotal;
 
@@ -27,12 +28,12 @@ public class Reserva {
         this.idReserva = idReserva;
     }
 
-    public Pasajero getCliente() {
-        return cliente;
+    public Pasajero getPasajero() {
+        return pasajero;
     }
 
-    public void setCliente(Pasajero cliente) {
-        this.cliente = cliente;
+    public void setPasajero(Pasajero pasajeo) {
+        this.pasajero = pasajero;
     }
 
     public MetodoDePago getMetodoDePago() {
@@ -59,6 +60,14 @@ public class Reserva {
         this.vuelo = vuelo;
     }
 
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
     public List<DetallePasajero> getDetallePasajero() {
         return detallePasajero;
     }
@@ -79,10 +88,11 @@ public class Reserva {
     public String toString() {
         return "Reserva{" +
                 "idReserva=" + idReserva +
-                ", cliente=" + cliente +
+                ", pasajero=" + pasajero +
                 ", metodoDePago=" + metodoDePago +
                 ", fechaHora=" + fechaHora +
                 ", vuelo=" + vuelo +
+                ", cantidad=" + cantidad +
                 ", detallePasajero=" + detallePasajero +
                 ", precioTotal=" + precioTotal +
                 '}';

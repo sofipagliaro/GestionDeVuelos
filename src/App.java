@@ -1,9 +1,5 @@
-import clases.Aeropuerto;
-import clases.Avion;
-import clases.Vuelo;
-import manejoJSON.GestionJSONAeropuerto;
-import manejoJSON.GestionJSONAvion;
-import manejoJSON.GestionJSONVuelo;
+import clases.*;
+import manejoJSON.*;
 
 import java.util.HashMap;
 
@@ -13,6 +9,17 @@ public class App {
         HashMap<String, Aeropuerto> mapaAeropuertos = GestionJSONAeropuerto.mapeoAeropuertos();
         HashMap<String, Avion> mapaAviones = GestionJSONAvion.mapeoAviones();
         HashMap<String, Vuelo> mapaVuelos = GestionJSONVuelo.mapeoVuelos(mapaAviones, mapaAeropuertos);
+
+        HashMap<String, Persona> mapaPersonas = GestionJSONPersona.mapeoPersonas();
+
+        HashMap<String, Reserva> mapaReservas = GestionJSONReserva.mapeoReservas(mapaPersonas, mapaVuelos);
+
+
+        System.out.println(mapaReservas);
+        System.out.println(mapaReservas.size());
+
+        System.out.println(mapaPersonas);
+        System.out.println(mapaPersonas.size());
 
         Vuelo v = new Vuelo();
         int total = v.calcularTotalPasajeros(mapaVuelos);

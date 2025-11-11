@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Administrador extends Persona implements I_VerViajes {
+public class Administrador extends Empleado implements I_VerViajes {
+
+
 
     private List<Vuelo> vuelosGestionados;
     private List<Reserva> reservasRegistradas;

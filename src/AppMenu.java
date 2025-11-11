@@ -2,7 +2,9 @@ import clases.Administrador;
 import clases.Empleado;
 import clases.Pasajero;
 import clases.Persona;
+import manejoJSON.GestionJSONPersona;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 import static clases.GestionUsuario.*;
@@ -22,6 +24,9 @@ public class AppMenu {
         String usuario = sc.nextLine();
         System.out.print("Ingrese contraseña: ");
         String password = sc2.nextLine();
+
+
+        HashMap<String, Persona> mapaPersonas = GestionJSONPersona.mapeoPersonas();
 
 // Autenticación
        Persona persona = login(usuario, password, mapaPersonas);

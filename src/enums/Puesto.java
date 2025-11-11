@@ -1,6 +1,6 @@
 package enums;
 
 public enum Puesto {
-    EMPLEADO_DE_AEROLINEA,
+    ASISTENTE_VENTAS,
     ADMINISTRACION;
 }
