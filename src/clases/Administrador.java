@@ -1,12 +1,27 @@
 package clases;
 
+import interfaces.I_VerViajes;
+import java.util.List;
+import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Administrador extends Persona{
+public class Administrador extends Persona implements I_VerViajes {
+
+    private List<Vuelo> vuelosGestionados;
+    private List<Reserva> reservasRegistradas;
+
     public Administrador() {
+        this.vuelosGestionados = new ArrayList<>();
+        this.reservasRegistradas = new ArrayList<>();
+    }
+    public List<Vuelo> getVuelosGestionados() {
+        return vuelosGestionados;
     }
 
-    ///Metodos
+    public List<Reserva> getReservasRegistradas() {
+        return reservasRegistradas;
+    }
+
     public void crearVuelo(HashMap<String, Vuelo> mapaVuelos, Vuelo vueloNuevo) {
         if (mapaVuelos.containsKey(vueloNuevo.getIdVuelo())) {
             System.out.println("Ya existe un vuelo con ese ID: " + vueloNuevo.getIdVuelo());
@@ -42,6 +57,15 @@ public class Administrador extends Persona{
     }
 
 
+    @Override
+    public
+    List<Vuelo> verVuelos() {
+        return vuelosGestionados;
+    }
 
+    @Override
+    public List<Reserva> verReservas() {
+        return reservasRegistradas;
+    }
 
 }
