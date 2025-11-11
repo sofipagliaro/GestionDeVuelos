@@ -1,14 +1,12 @@
 package clases;
 
 import enums.MetodoDePago;
-import excepciones.CancelacionNoPermitidaException;
-import excepciones.IdDuplicadoException;
-import excepciones.IdNoExistenteException;
-import excepciones.ReservaNoPermitidaException;
+import excepciones.*;
 import manejoJSON.*;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -46,11 +44,240 @@ public class GestionAerolinea {
     }
 
 
+    /// AEROLINEAS
 
+    public void crearAeropuerto(String codigoAeropuertoClave, Aeropuerto nuevoAeropuerto) throws IdDuplicadoException {
+        this.gestorAeropuertos.agregar(codigoAeropuertoClave, nuevoAeropuerto);
+        System.out.println("Aeropuerto " + codigoAeropuertoClave + " creado y guardado.");
+    }
 
+    public Aeropuerto obtenerAeropuertoPorId(String codigoAeropuerto) throws IdNoExistenteException {
+        return this.gestorAeropuertos.leer(codigoAeropuerto);
+    }
 
+    public void modificarAeropuerto(String codigoAeropuertoClave, Aeropuerto aeropuertoModificado) throws IdNoExistenteException {
+        this.gestorAeropuertos.actualizar(codigoAeropuertoClave, aeropuertoModificado);
+        System.out.println("Aeropuerto " + codigoAeropuertoClave + " modificado y guardado.");
+    }
 
+    public void eliminarAeropuerto(String codigoAeropuerto) throws IdNoExistenteException, AeropuertoEnUsoException {
 
+        if (tieneVuelosPendientes(codigoAeropuerto)) {
+            throw new AeropuertoEnUsoException("El Aeropuerto " + codigoAeropuerto + " no puede ser eliminado porque tiene vuelos programados pendientes."
+            );
+        }
+
+        this.gestorAeropuertos.eliminar(codigoAeropuerto);
+        System.out.println("Aeropuerto " + codigoAeropuerto + " eliminado del sistema y del JSON.");
+    }
+
+    private boolean tieneVuelosPendientes(String codigoAeropuerto) {
+
+        HashMap<String, Vuelo> todosLosVuelos = this.gestorVuelos.getMapaEntidades();
+        LocalDateTime ahora = LocalDateTime.now();
+
+        for (Vuelo vuelo : todosLosVuelos.values()) {
+
+            boolean usaAeropuerto = vuelo.getOrigen().getCodigo().equals(codigoAeropuerto) || vuelo.getDestino().getCodigo().equals(codigoAeropuerto);
+
+            boolean esPendiente = vuelo.getFechaHora().isAfter(ahora);
+
+            if (usaAeropuerto && esPendiente) {
+                return true; // Hay vuelos pendientes
+            }
+        }
+
+        return false; // No hay vuelos pendientes
+    }
+
+    /// AVIONES
+
+    public void crearAvion(String idAvionClave, Avion nuevoAvion) throws IdDuplicadoException {
+        this.gestorAviones.agregar(idAvionClave, nuevoAvion);
+        System.out.println("Avión " + idAvionClave + " creado y guardado.");
+    }
+
+    public Avion obtenerAvionPorId(String idAvion) throws IdNoExistenteException {
+        return this.gestorAviones.leer(idAvion);
+    }
+
+    public void modificarAvion(String idAvionClave, Avion avionModificado) throws IdNoExistenteException {
+        this.gestorAviones.actualizar(idAvionClave, avionModificado);
+        System.out.println("Avión " + idAvionClave + " modificado y guardado.");
+    }
+
+    public void eliminarAvion(String idAvion) throws IdNoExistenteException, AvionEnUsoException {
+
+        if (tieneVuelosPendientesAsignados(idAvion)) {
+            throw new AvionEnUsoException("El Avión " + idAvion + " no puede ser eliminado porque tiene vuelos programados pendientes asignados.");
+        }
+
+        this.gestorAviones.eliminar(idAvion);
+        System.out.println("Avión " + idAvion + " eliminado del sistema y del JSON.");
+    }
+
+    private boolean tieneVuelosPendientesAsignados(String idAvion) {
+        HashMap<String, Vuelo> todosLosVuelos = this.gestorVuelos.getMapaEntidades();
+        LocalDateTime ahora = LocalDateTime.now();
+
+        for (Vuelo vuelo : todosLosVuelos.values()) {
+            boolean usaAvion = vuelo.getAvion().getIdAvion().equals(idAvion);
+            boolean esPendiente = vuelo.getFechaHora().isAfter(ahora);
+
+            if (usaAvion && esPendiente) {
+                return true; // Hay vuelos pendientes con ese avión
+            }
+        }
+
+        return false; // No hay vuelos pendientes con ese avión
+    }
+
+    /// PERSONAS
+
+    public void crearPersona(String idPersonaClave, Persona nuevaPersona) throws IdDuplicadoException {
+        this.gestorPersonas.agregar(idPersonaClave, nuevaPersona);
+        System.out.println("Persona (DNI: " + idPersonaClave + ") creada y guardada.");
+    }
+
+    public Persona obtenerPersonaPorId(String idPersona) throws IdNoExistenteException {
+        return this.gestorPersonas.leer(idPersona);
+    }
+
+    public void modificarPersona(String idPersonaClave, Persona personaModificada) throws IdNoExistenteException {
+        this.gestorPersonas.actualizar(idPersonaClave, personaModificada);
+        System.out.println("Persona (DNI: " + idPersonaClave + ") modificada y guardada.");
+    }
+
+    public void eliminarPersona(String idPersona) throws IdNoExistenteException, PersonaConReservasException {
+
+        if (tieneReservasPendientes(idPersona)) {
+            throw new PersonaConReservasException("La Persona con ID " + idPersona + " no puede ser eliminada porque tiene reservas de vuelo pendientes a su nombre.");
+        }
+
+        this.gestorPersonas.eliminar(idPersona);
+        System.out.println("Persona (DNI: " + idPersona + ") eliminada del sistema y del JSON.");
+    }
+
+    private boolean tieneReservasPendientes(String idPersona) {
+
+        HashMap<String, Reserva> todasLasReservas = this.gestorReservas.getMapaEntidades();
+        LocalDateTime ahora = LocalDateTime.now();
+
+        for (Reserva reserva : todasLasReservas.values()) {
+
+            boolean esPendiente = reserva.getVuelo().getFechaHora().isAfter(ahora);
+
+            if (esPendiente) {
+
+                if (reserva.getPasajero().getDni().equals(idPersona)) {
+                    return true;
+                }
+
+                List<DetallePasajero> detalles = reserva.getDetallePasajero();
+
+                for (DetallePasajero detalle : detalles) {
+                    if (detalle.getPasajero().getDni().equals(idPersona)) {
+                        return true;
+                    }
+                }
+            }
+        }
+
+        return false; // No hay reservas pendientes
+    }
+
+    /// VUELOS
+
+    public void crearVuelo(String idVueloClave, String idAvion, String idOrigen, String idDestino, Vuelo nuevoVuelo
+    ) throws IdDuplicadoException, IdNoExistenteException {
+
+        Avion avionAsignado = this.gestorAviones.leer(idAvion);
+        Aeropuerto origen = this.gestorAeropuertos.leer(idOrigen);
+        Aeropuerto destino = this.gestorAeropuertos.leer(idDestino);
+
+        nuevoVuelo.setAvion(avionAsignado);
+        nuevoVuelo.setOrigen(origen);
+        nuevoVuelo.setDestino(destino);
+
+        this.gestorVuelos.agregar(idVueloClave, nuevoVuelo);
+        System.out.println("Vuelo " + idVueloClave + " creado y guardado.");
+    }
+
+    public Vuelo obtenerVueloPorId(String idVuelo) throws IdNoExistenteException {
+        return this.gestorVuelos.leer(idVuelo);
+    }
+
+    public List<Vuelo> obtenerVuelosPorCiudadesOrigenDestino(String ciudadOrigen, String ciudadDestino) {
+
+        HashMap<String, Vuelo> todosLosVuelos = this.gestorVuelos.getMapaEntidades();
+        List<Vuelo> vuelosEncontrados = new ArrayList<>();
+
+        for (Vuelo vuelo : todosLosVuelos.values()) {
+
+            String vueloCiudadOrigen = vuelo.getOrigen().getUbicacion().getCiudad();
+            String vueloCiudadDestino = vuelo.getDestino().getUbicacion().getCiudad();
+
+            if (vueloCiudadOrigen.equalsIgnoreCase(ciudadOrigen) &&
+                    vueloCiudadDestino.equalsIgnoreCase(ciudadDestino)) {
+
+                vuelosEncontrados.add(vuelo);
+            }
+        }
+
+        return vuelosEncontrados;
+    }
+
+    public List<Vuelo> obtenerVuelosPorPrecioMaximo(double precioMaximo) {
+
+        HashMap<String, Vuelo> todosLosVuelos = this.gestorVuelos.getMapaEntidades();
+        List<Vuelo> vuelosEncontrados = new ArrayList<>();
+
+        for (Vuelo vuelo : todosLosVuelos.values()) {
+
+            double precioBaseVuelo = vuelo.getPrecio();
+
+            if (precioBaseVuelo <= precioMaximo) {
+                vuelosEncontrados.add(vuelo);
+            }
+        }
+
+        return vuelosEncontrados;
+    }
+
+    public void modificarVuelo(String idVueloClave, Vuelo vueloModificado) throws IdNoExistenteException {
+
+        String nuevoIdAvion = vueloModificado.getAvion().getIdAvion();
+        this.gestorAviones.leer(nuevoIdAvion);
+
+        String nuevoIdOrigen = vueloModificado.getOrigen().getCodigo();
+        this.gestorAeropuertos.leer(nuevoIdOrigen);
+
+        String nuevoIdDestino = vueloModificado.getDestino().getCodigo();
+        this.gestorAeropuertos.leer(nuevoIdDestino);
+
+        this.gestorVuelos.actualizar(idVueloClave, vueloModificado);
+        System.out.println("Vuelo " + idVueloClave + " modificado y guardado.");
+    }
+
+    public void eliminarVuelo(String idVuelo) throws IdNoExistenteException, VueloConReservasException {
+        if (tieneReservas(idVuelo)) {
+            throw new VueloConReservasException("El Vuelo " + idVuelo + " no puede ser eliminado porque tiene reservas activas asociadas.");
+        }
+
+        this.gestorVuelos.eliminar(idVuelo);
+        System.out.println("Vuelo " + idVuelo + " eliminado del sistema y del JSON.");
+    }
+
+    private boolean tieneReservas(String idVuelo) {
+        HashMap<String, Reserva> todasLasReservas = this.gestorReservas.getMapaEntidades();
+        for (Reserva reserva : todasLasReservas.values()) {
+            if (reserva.getVuelo().getIdVuelo().equals(idVuelo)) {
+                return true; // Se encontró una reserva para este vuelo
+            }
+        }
+
+        return false; // No hay reservas
+    }
 
     /// RESERVAS
 
@@ -83,7 +310,6 @@ public class GestionAerolinea {
         int cantidadPasajeros = detallesPasajeros.size();
 
         double precioFinal = calcularPrecioTotalReserva(detallesPasajeros);
-
 
         LocalDateTime fechaPartidaVuelo = vueloSeleccionado.getFechaHora();
         LocalDateTime fechaHoraActual = LocalDateTime.now();
