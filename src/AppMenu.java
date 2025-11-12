@@ -10,7 +10,6 @@ import java.util.*;
 
 public class AppMenu {
 
-
     private static final Scanner sc = new Scanner(System.in);
     private static GestionAerolinea gestor = new GestionAerolinea();
 
@@ -45,7 +44,7 @@ public class AppMenu {
     public static void menuPasajero(Pasajero pasajero) {
         int opcion;
         do {
-            System.out.println("\n===== MENÚ PASAJERO =====");
+            System.out.println("\n===== ¡TE DAMOS LA BIENVENIDA PASAJERO/A! =====");
             System.out.println("1.Buscar vuelos por origen y destino");
             /*System.out.println("2. Ver mis reservas");*/
             System.out.println("2. Cerrar sesión");
@@ -63,10 +62,9 @@ public class AppMenu {
 
                     List<Vuelo> vuelosEncontrados = gestor.obtenerVuelosPorCiudadesOrigenDestino(origen, destino);
 
-                    if (vuelosEncontrados.isEmpty()){
+                    if (vuelosEncontrados.isEmpty()) {
                         System.out.println("No se encontraron vuelos");
-                    }
-                    else {
+                    } else {
                         for (Vuelo vuelo : vuelosEncontrados) {
                             System.out.println("  ID Vuelo: " + vuelo.getIdVuelo());
                             System.out.println("  Origen: " + vuelo.getOrigen());
@@ -77,17 +75,13 @@ public class AppMenu {
                     }
 
                     break;
-                /*case 2:
-                    System.out.println("→ Mostrando reservas...");
-                    // Mostrar reservas del pasajero
-                    break;*/
                 case 2:
-                    ///System.out.println("→ Cerrando sesión...");
+                    System.out.println("→ Cerrando sesión...");
                     break;
                 default:
                     System.out.println("Opción inválida. Intente nuevamente.");
             }
-        } while (opcion != 3);
+        } while (opcion != 2);
     }
 
     // ========================
@@ -96,7 +90,7 @@ public class AppMenu {
     public static void menuEmpleado(Empleado empleado) {
         int opcion;
         do {
-            System.out.println("\n===== MENÚ EMPLEADO =====");
+            System.out.println("\n===== COMO EMPLEADO DE LA AEROLINIA, ¿QUE DESEAS HACER? =====");
             System.out.println("1. Crear reserva");
             /*System.out.println("2. Modificar reserva");
             System.out.println("3. Eliminar reserva");*/
@@ -114,7 +108,6 @@ public class AppMenu {
 
                         System.out.print("Ingrese el DNI del pasajero: ");
                         dniPasajero = sc.nextLine();
-
 
                         Persona personaExistente = gestor.obtenerPersonaPorId(dniPasajero);
 
@@ -178,7 +171,7 @@ public class AppMenu {
                         }
 
                         System.out.println("\nSeleccione Método de Pago:");
-                        System.out.println("1. EFECTIVO | 2. TARJETA | 3. TRANSFERENCIA");
+                        System.out.println("1. EFECTIVO | 2. DEBITO | 3. CREDITO");
                         System.out.print("Ingrese el número de la opción: ");
                         int opcionPago = sc.nextInt();
                         sc.nextLine();
@@ -209,7 +202,8 @@ public class AppMenu {
                                 try {
                                     asientoElegido = gestor.obtenerAsientoPorId(idVuelo, idAsiento);
                                     asientoValido = true;
-                                } catch (excepciones.IdNoExistenteException | excepciones.AsientoNoDisponibleException e) {
+                                } catch (excepciones.IdNoExistenteException |
+                                         excepciones.AsientoNoDisponibleException e) {
                                     System.out.println("ERROR: " + e.getMessage() + " Intente de nuevo.");
                                 }
                             }
@@ -299,9 +293,10 @@ public class AppMenu {
                     } catch (java.util.InputMismatchException e) {
                         System.out.println("ERROR: Ingrese solo números válidos. Intente de nuevo.");
                         sc.nextLine();
-                    } catch (excepciones.IdNoExistenteException | excepciones.ValorInvalidoException | excepciones.AsientoNoDisponibleException | excepciones.IdDuplicadoException e) {
+                    } catch (excepciones.IdNoExistenteException | excepciones.ValorInvalidoException |
+                             excepciones.AsientoNoDisponibleException | excepciones.IdDuplicadoException e) {
                         System.out.println("ERROR: " + e.getMessage());
-                    } catch (Exception e){
+                    } catch (Exception e) {
                         System.out.println("ERROR INESPERADO: " + e.getMessage());
                     }
                     break;
@@ -314,7 +309,7 @@ public class AppMenu {
                     // empleado.eliminarReserva();
                     break;*/
                 case 4:
-
+                    sc.nextLine();
                     System.out.print("Ingrese el DNI del pasajero: ");
                     String dniPasajero = sc.nextLine();
 
@@ -357,7 +352,7 @@ public class AppMenu {
                 default:
                     System.out.println("Opción inválida. Intente nuevamente.");
             }
-        } while (opcion != 4);
+        } while (opcion != 5);
     }
 
     // ========================
@@ -379,7 +374,7 @@ public class AppMenu {
                 case 1:
                     try {
                         sc.nextLine();
-                        System.out.println("Ingrese la clave del vuelo");
+                        System.out.println("Ingrese la clave del vuelo:ej. VUELO-A-01");
                         String idVuelo = sc.nextLine();
 
                         System.out.print("Ingrese fecha y hora de partida (YYYY-MM-DDTHH:MM, ej: 2026-06-15T14:30): ");
@@ -472,21 +467,19 @@ public class AppMenu {
                 case 3:
                     sc.nextLine();
                     try {
-
-                        sc.nextLine();
-                        System.out.println("Ingrese el dni del empleado");
+                        System.out.println("Ingrese el DNI del empleado a crear");
                         String dni = sc.nextLine();
 
                         System.out.print("Ingrese nombre del empleado: ");
                         String nombre = sc.nextLine();
 
-                        System.out.println("Ingrese el apellido del empleado");
+                        System.out.println("Ingrese el apellido del empleado ");
                         String apellido = sc.nextLine();
 
                         System.out.print("Ingrese direccion del empleado: ");
                         String direccion = sc.nextLine();
 
-                        System.out.println("Ingrese el telefono del empleado");
+                        System.out.println("Ingrese el telefono del empleado ");
                         long telefono = sc.nextLong();
                         sc.nextLine();
 
@@ -497,13 +490,13 @@ public class AppMenu {
                         String fechaNacimiento = sc.nextLine();
                         LocalDate fechaNac = LocalDate.parse(fechaNacimiento);
 
-                        System.out.println("Ingrese el usuario del empleado");
+                        System.out.println("Ingrese el usuario del empleado ");
                         String usuario = sc.nextLine();
 
                         System.out.print("Ingrese password del empleado: ");
                         String password = sc.nextLine();
 
-                        System.out.println("Ingrese la fecha de ingreso del empleado");
+                        System.out.println("Ingrese la fecha de ingreso del empleado YYYY-MM-DD, ej: 2025-12-01");
                         String fechaIngreso = sc.nextLine();
                         LocalDate fechaIngr = LocalDate.parse(fechaIngreso);
 

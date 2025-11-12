@@ -135,6 +135,18 @@
         "dni": "30000009",
         "email": "vale.rojas@mail.com"
     },
+    "37010652": {
+        "password": "mariana123",
+        "tipo": "PASAJERO",
+        "fechaNacimiento": "1992-08-13",
+        "apellido": "croce",
+        "direccion": "roca 2650",
+        "usuario": "mariana123",
+        "telefono": 2236852852,
+        "nombre": "mariana",
+        "dni": "37010652",
+        "email": "marianacoce@gmail.com"
+    },
     "30000007": {
         "password": "pass30000007",
         "tipo": "PASAJERO",

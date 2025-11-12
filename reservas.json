@@ -1,781 +1,672 @@
 {
-  "1": {
-    "idReserva": 1,
-    "idVuelo": "VUELO-P-01",
-    "dniPasajeroTitular": "30000003",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-05-10T10:00:00",
-    "cantidad": 1,
-    "precioTotal": 260498.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000003",
-        "asientoAsignado": "1",
-        "precioIndividual": 260498.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "2": {
-    "idReserva": 2,
-    "idVuelo": "VUELO-P-01",
-    "dniPasajeroTitular": "30000004",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-05-10T10:05:00",
-    "cantidad": 1,
-    "precioTotal": 292670.3,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000004",
-        "asientoAsignado": "2",
-        "precioIndividual": 292670.3,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "3": {
-    "idReserva": 3,
-    "idVuelo": "VUELO-P-01",
-    "dniPasajeroTitular": "30000005",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-05-10T10:10:00",
-    "cantidad": 1,
-    "precioTotal": 315193.36,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000005",
-        "asientoAsignado": "3",
-        "precioIndividual": 315193.36,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "4": {
-    "idReserva": 4,
-    "idVuelo": "VUELO-P-01",
-    "dniPasajeroTitular": "30000006",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-05-10T10:15:00",
-    "cantidad": 1,
-    "precioTotal": 325193.36,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000006",
-        "asientoAsignado": "4",
-        "precioIndividual": 325193.36,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "5": {
-    "idReserva": 5,
-    "idVuelo": "VUELO-P-02",
-    "dniPasajeroTitular": "30000007",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-06-15T15:00:00",
-    "cantidad": 1,
-    "precioTotal": 292670.08,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000007",
-        "asientoAsignado": "1",
-        "precioIndividual": 292670.08,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "6": {
-    "idReserva": 6,
-    "idVuelo": "VUELO-P-02",
-    "dniPasajeroTitular": "30000008",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-06-15T15:05:00",
-    "cantidad": 1,
-    "precioTotal": 320219.4,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000008",
-        "asientoAsignado": "2",
-        "precioIndividual": 320219.4,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "7": {
-    "idReserva": 7,
-    "idVuelo": "VUELO-P-02",
-    "dniPasajeroTitular": "30000009",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-06-15T15:10:00",
-    "cantidad": 1,
-    "precioTotal": 373821.46,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000009",
-        "asientoAsignado": "3",
-        "precioIndividual": 373821.46,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "BODEGA",
-            "precio": 20000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "8": {
-    "idReserva": 8,
-    "idVuelo": "VUELO-P-02",
-    "dniPasajeroTitular": "30000010",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-06-15T15:15:00",
-    "cantidad": 1,
-    "precioTotal": 358821.46,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000010",
-        "asientoAsignado": "4",
-        "precioIndividual": 358821.46,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "9": {
-    "idReserva": 9,
-    "idVuelo": "VUELO-P-03",
-    "dniPasajeroTitular": "30000011",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-07-20T09:00:00",
-    "cantidad": 1,
-    "precioTotal": 270088.08,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000011",
-        "asientoAsignado": "1",
-        "precioIndividual": 270088.08,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "10": {
-    "idReserva": 10,
-    "idVuelo": "VUELO-P-03",
-    "dniPasajeroTitular": "30000012",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-07-20T09:05:00",
-    "cantidad": 1,
-    "precioTotal": 309406.84,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000012",
-        "asientoAsignado": "2",
-        "precioIndividual": 309406.84,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "11": {
-    "idReserva": 11,
-    "idVuelo": "VUELO-P-03",
-    "dniPasajeroTitular": "30000013",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-07-20T09:10:00",
-    "cantidad": 1,
-    "precioTotal": 345000,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000013",
-        "asientoAsignado": "3",
-        "precioIndividual": 345000,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          },
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "12": {
-    "idReserva": 12,
-    "idVuelo": "VUELO-P-03",
-    "dniPasajeroTitular": "30000014",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-07-20T09:15:00",
-    "cantidad": 1,
-    "precioTotal": 335000,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000014",
-        "asientoAsignado": "4",
-        "precioIndividual": 335000,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "13": {
-    "idReserva": 13,
-    "idVuelo": "VUELO-P-04",
-    "dniPasajeroTitular": "30000015",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-08-01T12:00:00",
-    "cantidad": 1,
-    "precioTotal": 305455.5,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000015",
-        "asientoAsignado": "1",
-        "precioIndividual": 305455.5,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "14": {
-    "idReserva": 14,
-    "idVuelo": "VUELO-P-04",
-    "dniPasajeroTitular": "30000016",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-08-01T12:05:00",
-    "cantidad": 1,
-    "precioTotal": 331108.66,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000016",
-        "asientoAsignado": "2",
-        "precioIndividual": 331108.66,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "15": {
-    "idReserva": 15,
-    "idVuelo": "VUELO-P-04",
-    "dniPasajeroTitular": "30000017",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-08-01T12:10:00",
-    "cantidad": 1,
-    "precioTotal": 375566.62,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000017",
-        "asientoAsignado": "3",
-        "precioIndividual": 375566.62,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "16": {
-    "idReserva": 16,
-    "idVuelo": "VUELO-P-04",
-    "dniPasajeroTitular": "30000018",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-08-01T12:15:00",
-    "cantidad": 1,
-    "precioTotal": 385566.62,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000018",
-        "asientoAsignado": "4",
-        "precioIndividual": 385566.62,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "BODEGA",
-            "precio": 20000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "17": {
-    "idReserva": 17,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000019",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-01T10:00:00",
-    "cantidad": 1,
-    "precioTotal": 250051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000019",
-        "asientoAsignado": "1",
-        "precioIndividual": 250051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "18": {
-    "idReserva": 18,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000020",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-09-01T10:05:00",
-    "cantidad": 1,
-    "precioTotal": 245051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000020",
-        "asientoAsignado": "2",
-        "precioIndividual": 245051.48,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "19": {
-    "idReserva": 19,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000021",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-01T10:10:00",
-    "cantidad": 1,
-    "precioTotal": 255051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000021",
-        "asientoAsignado": "3",
-        "precioIndividual": 255051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "20": {
-    "idReserva": 20,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000022",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-09-01T10:15:00",
-    "cantidad": 1,
-    "precioTotal": 265051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000022",
-        "asientoAsignado": "4",
-        "precioIndividual": 265051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "BODEGA",
-            "precio": 20000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "21": {
-    "idReserva": 21,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000023",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-01T10:20:00",
-    "cantidad": 1,
-    "precioTotal": 250051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000023",
-        "asientoAsignado": "5",
-        "precioIndividual": 250051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "22": {
-    "idReserva": 22,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000024",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-09-01T10:25:00",
-    "cantidad": 1,
-    "precioTotal": 245051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000024",
-        "asientoAsignado": "6",
-        "precioIndividual": 245051.48,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "23": {
-    "idReserva": 23,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000025",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-01T10:30:00",
-    "cantidad": 1,
-    "precioTotal": 255051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000025",
-        "asientoAsignado": "7",
-        "precioIndividual": 255051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "24": {
-    "idReserva": 24,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000026",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-09-01T10:35:00",
-    "cantidad": 1,
-    "precioTotal": 265051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000026",
-        "asientoAsignado": "8",
-        "precioIndividual": 265051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "BODEGA",
-            "precio": 20000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "25": {
-    "idReserva": 25,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000027",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-01T10:40:00",
-    "cantidad": 1,
-    "precioTotal": 250051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000027",
-        "asientoAsignado": "9",
-        "precioIndividual": 250051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "26": {
-    "idReserva": 26,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000028",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-09-01T10:45:00",
-    "cantidad": 1,
-    "precioTotal": 245051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000028",
-        "asientoAsignado": "10",
-        "precioIndividual": 245051.48,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "27": {
-    "idReserva": 27,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000029",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-01T10:50:00",
-    "cantidad": 1,
-    "precioTotal": 255051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000029",
-        "asientoAsignado": "11",
-        "precioIndividual": 255051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "28": {
-    "idReserva": 28,
-    "idVuelo": "VUELO-P-05",
-    "dniPasajeroTitular": "30000030",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-09-01T10:55:00",
-    "cantidad": 1,
-    "precioTotal": 265051.48,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000030",
-        "asientoAsignado": "12",
-        "precioIndividual": 265051.48,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "BODEGA",
-            "precio": 20000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "29": {
-    "idReserva": 29,
-    "idVuelo": "VUELO-F-06",
-    "dniPasajeroTitular": "30000031",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-15T18:00:00",
-    "cantidad": 1,
-    "precioTotal": 275603.88,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000031",
-        "asientoAsignado": "1",
-        "precioIndividual": 275603.88,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "30": {
-    "idReserva": 30,
-    "idVuelo": "VUELO-F-06",
-    "dniPasajeroTitular": "30000032",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-09-15T18:05:00",
-    "cantidad": 1,
-    "precioTotal": 302504.6,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000032",
-        "asientoAsignado": "2",
-        "precioIndividual": 302504.6,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "31": {
-    "idReserva": 31,
-    "idVuelo": "VUELO-F-06",
-    "dniPasajeroTitular": "30000033",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-15T18:10:00",
-    "cantidad": 1,
-    "precioTotal": 344149.2,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000033",
-        "asientoAsignado": "3",
-        "precioIndividual": 344149.2,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "32": {
-    "idReserva": 32,
-    "idVuelo": "VUELO-F-06",
-    "dniPasajeroTitular": "30000034",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-09-15T18:15:00",
-    "cantidad": 1,
-    "precioTotal": 354149.2,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000034",
-        "asientoAsignado": "4",
-        "precioIndividual": 354149.2,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "BODEGA",
-            "precio": 20000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "33": {
-    "idReserva": 33,
-    "idVuelo": "VUELO-F-07",
-    "dniPasajeroTitular": "30000035",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-20T08:00:00",
-    "cantidad": 1,
-    "precioTotal": 260042.84,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000035",
-        "asientoAsignado": "1",
-        "precioIndividual": 260042.84,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MOCHILA",
-            "precio": 5000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "34": {
-    "idReserva": 34,
-    "idVuelo": "VUELO-F-07",
-    "dniPasajeroTitular": "30000036",
-    "metodoDePago": "DEBITO",
-    "fechaHora": "2025-09-20T08:05:00",
-    "cantidad": 1,
-    "precioTotal": 285000,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000036",
-        "asientoAsignado": "2",
-        "precioIndividual": 285000,
-        "listaEquipaje": []
-      }
-    ]
-  },
-  "35": {
-    "idReserva": 35,
-    "idVuelo": "VUELO-F-07",
-    "dniPasajeroTitular": "30000037",
-    "metodoDePago": "CREDITO",
-    "fechaHora": "2025-09-20T08:10:00",
-    "cantidad": 1,
-    "precioTotal": 325000,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000037",
-        "asientoAsignado": "3",
-        "precioIndividual": 325000,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "MALETA",
-            "precio": 10000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  },
-  "36": {
-    "idReserva": 36,
-    "idVuelo": "VUELO-F-07",
-    "dniPasajeroTitular": "30000038",
-    "metodoDePago": "EFECTIVO",
-    "fechaHora": "2025-09-20T08:15:00",
-    "cantidad": 1,
-    "precioTotal": 335000,
-    "detallePasajero": [
-      {
-        "dniPasajero": "30000038",
-        "asientoAsignado": "4",
-        "precioIndividual": 335000,
-        "listaEquipaje": [
-          {
-            "tipoEquipaje": "BODEGA",
-            "precio": 20000,
-            "cantidad": 1
-          }
-        ]
-      }
-    ]
-  }
+    "22": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000024",
+            "listaEquipaje": [],
+            "precioIndividual": 245051.48,
+            "asientoAsignado": 6
+        }],
+        "fechaHora": "2025-09-01T10:25",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000024",
+        "precioTotal": 245051.48,
+        "idReserva": 22
+    },
+    "23": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000025",
+            "listaEquipaje": [{
+                "precio": 10000,
+                "cantidad": 1,
+                "tipoEquipaje": "MALETA"
+            }],
+            "precioIndividual": 255051.48,
+            "asientoAsignado": 7
+        }],
+        "fechaHora": "2025-09-01T10:30",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000025",
+        "precioTotal": 255051.48,
+        "idReserva": 23
+    },
+    "24": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000026",
+            "listaEquipaje": [{
+                "precio": 20000,
+                "cantidad": 1,
+                "tipoEquipaje": "BODEGA"
+            }],
+            "precioIndividual": 265051.48,
+            "asientoAsignado": 8
+        }],
+        "fechaHora": "2025-09-01T10:35",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000026",
+        "precioTotal": 265051.48,
+        "idReserva": 24
+    },
+    "25": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000027",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 250051.48,
+            "asientoAsignado": 9
+        }],
+        "fechaHora": "2025-09-01T10:40",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000027",
+        "precioTotal": 250051.48,
+        "idReserva": 25
+    },
+    "26": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000028",
+            "listaEquipaje": [],
+            "precioIndividual": 245051.48,
+            "asientoAsignado": 10
+        }],
+        "fechaHora": "2025-09-01T10:45",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000028",
+        "precioTotal": 245051.48,
+        "idReserva": 26
+    },
+    "27": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000029",
+            "listaEquipaje": [{
+                "precio": 10000,
+                "cantidad": 1,
+                "tipoEquipaje": "MALETA"
+            }],
+            "precioIndividual": 255051.48,
+            "asientoAsignado": 11
+        }],
+        "fechaHora": "2025-09-01T10:50",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000029",
+        "precioTotal": 255051.48,
+        "idReserva": 27
+    },
+    "28": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000030",
+            "listaEquipaje": [{
+                "precio": 20000,
+                "cantidad": 1,
+                "tipoEquipaje": "BODEGA"
+            }],
+            "precioIndividual": 265051.48,
+            "asientoAsignado": 12
+        }],
+        "fechaHora": "2025-09-01T10:55",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000030",
+        "precioTotal": 265051.48,
+        "idReserva": 28
+    },
+    "29": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000031",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 275603.88,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-09-15T18:00",
+        "idVuelo": "VUELO-F-08",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000031",
+        "precioTotal": 275603.88,
+        "idReserva": 29
+    },
+    "30": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000032",
+            "listaEquipaje": [],
+            "precioIndividual": 302504.6,
+            "asientoAsignado": 2
+        }],
+        "fechaHora": "2025-09-15T18:05",
+        "idVuelo": "VUELO-F-08",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000032",
+        "precioTotal": 302504.6,
+        "idReserva": 30
+    },
+    "31": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000033",
+            "listaEquipaje": [{
+                "precio": 10000,
+                "cantidad": 1,
+                "tipoEquipaje": "MALETA"
+            }],
+            "precioIndividual": 344149.2,
+            "asientoAsignado": 3
+        }],
+        "fechaHora": "2025-09-15T18:10",
+        "idVuelo": "VUELO-F-08",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000033",
+        "precioTotal": 344149.2,
+        "idReserva": 31
+    },
+    "10": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000012",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 309406.84,
+            "asientoAsignado": 2
+        }],
+        "fechaHora": "2025-07-20T09:05",
+        "idVuelo": "VUELO-P-03",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000012",
+        "precioTotal": 309406.84,
+        "idReserva": 10
+    },
+    "32": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000034",
+            "listaEquipaje": [{
+                "precio": 20000,
+                "cantidad": 1,
+                "tipoEquipaje": "BODEGA"
+            }],
+            "precioIndividual": 354149.2,
+            "asientoAsignado": 4
+        }],
+        "fechaHora": "2025-09-15T18:15",
+        "idVuelo": "VUELO-F-08",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000034",
+        "precioTotal": 354149.2,
+        "idReserva": 32
+    },
+    "11": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000013",
+            "listaEquipaje": [
+                {
+                    "precio": 10000,
+                    "cantidad": 1,
+                    "tipoEquipaje": "MALETA"
+                },
+                {
+                    "precio": 5000,
+                    "cantidad": 1,
+                    "tipoEquipaje": "MOCHILA"
+                }
+            ],
+            "precioIndividual": 345000,
+            "asientoAsignado": 3
+        }],
+        "fechaHora": "2025-07-20T09:10",
+        "idVuelo": "VUELO-P-03",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000013",
+        "precioTotal": 345000,
+        "idReserva": 11
+    },
+    "33": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000035",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 260042.84,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-09-20T08:00",
+        "idVuelo": "VUELO-F-10",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000035",
+        "precioTotal": 260042.84,
+        "idReserva": 33
+    },
+    "12": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000014",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 335000,
+            "asientoAsignado": 4
+        }],
+        "fechaHora": "2025-07-20T09:15",
+        "idVuelo": "VUELO-P-03",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000014",
+        "precioTotal": 335000,
+        "idReserva": 12
+    },
+    "34": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000036",
+            "listaEquipaje": [],
+            "precioIndividual": 285000,
+            "asientoAsignado": 2
+        }],
+        "fechaHora": "2025-09-20T08:05",
+        "idVuelo": "VUELO-F-10",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000036",
+        "precioTotal": 285000,
+        "idReserva": 34
+    },
+    "13": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000015",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 305455.5,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-08-01T12:00",
+        "idVuelo": "VUELO-P-04",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000015",
+        "precioTotal": 305455.5,
+        "idReserva": 13
+    },
+    "35": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000037",
+            "listaEquipaje": [{
+                "precio": 10000,
+                "cantidad": 1,
+                "tipoEquipaje": "MALETA"
+            }],
+            "precioIndividual": 325000,
+            "asientoAsignado": 3
+        }],
+        "fechaHora": "2025-09-20T08:10",
+        "idVuelo": "VUELO-F-10",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000037",
+        "precioTotal": 325000,
+        "idReserva": 35
+    },
+    "14": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000016",
+            "listaEquipaje": [],
+            "precioIndividual": 331108.66,
+            "asientoAsignado": 2
+        }],
+        "fechaHora": "2025-08-01T12:05",
+        "idVuelo": "VUELO-P-04",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000016",
+        "precioTotal": 331108.66,
+        "idReserva": 14
+    },
+    "36": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000038",
+            "listaEquipaje": [{
+                "precio": 20000,
+                "cantidad": 1,
+                "tipoEquipaje": "BODEGA"
+            }],
+            "precioIndividual": 335000,
+            "asientoAsignado": 4
+        }],
+        "fechaHora": "2025-09-20T08:15",
+        "idVuelo": "VUELO-F-10",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000038",
+        "precioTotal": 335000,
+        "idReserva": 36
+    },
+    "15": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000017",
+            "listaEquipaje": [{
+                "precio": 10000,
+                "cantidad": 1,
+                "tipoEquipaje": "MALETA"
+            }],
+            "precioIndividual": 375566.62,
+            "asientoAsignado": 3
+        }],
+        "fechaHora": "2025-08-01T12:10",
+        "idVuelo": "VUELO-P-04",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000017",
+        "precioTotal": 375566.62,
+        "idReserva": 15
+    },
+    "37": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000005",
+            "listaEquipaje": [],
+            "precioIndividual": 255498.48,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-11-12T11:43:56.221889",
+        "idVuelo": "VUELO-P-01",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000005",
+        "precioTotal": 255498.48,
+        "idReserva": 37
+    },
+    "16": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000018",
+            "listaEquipaje": [{
+                "precio": 20000,
+                "cantidad": 1,
+                "tipoEquipaje": "BODEGA"
+            }],
+            "precioIndividual": 385566.62,
+            "asientoAsignado": 4
+        }],
+        "fechaHora": "2025-08-01T12:15",
+        "idVuelo": "VUELO-P-04",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000018",
+        "precioTotal": 385566.62,
+        "idReserva": 16
+    },
+    "17": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000019",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 250051.48,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-09-01T10:00",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000019",
+        "precioTotal": 250051.48,
+        "idReserva": 17
+    },
+    "18": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000020",
+            "listaEquipaje": [],
+            "precioIndividual": 245051.48,
+            "asientoAsignado": 2
+        }],
+        "fechaHora": "2025-09-01T10:05",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000020",
+        "precioTotal": 245051.48,
+        "idReserva": 18
+    },
+    "19": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000021",
+            "listaEquipaje": [{
+                "precio": 10000,
+                "cantidad": 1,
+                "tipoEquipaje": "MALETA"
+            }],
+            "precioIndividual": 255051.48,
+            "asientoAsignado": 3
+        }],
+        "fechaHora": "2025-09-01T10:10",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000021",
+        "precioTotal": 255051.48,
+        "idReserva": 19
+    },
+    "1": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000003",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 260498.48,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-05-10T10:00",
+        "idVuelo": "VUELO-P-01",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000003",
+        "precioTotal": 260498.48,
+        "idReserva": 1
+    },
+    "2": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000004",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 292670.3,
+            "asientoAsignado": 2
+        }],
+        "fechaHora": "2025-05-10T10:05",
+        "idVuelo": "VUELO-P-01",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000004",
+        "precioTotal": 292670.3,
+        "idReserva": 2
+    },
+    "3": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000005",
+            "listaEquipaje": [],
+            "precioIndividual": 315193.36,
+            "asientoAsignado": 3
+        }],
+        "fechaHora": "2025-05-10T10:10",
+        "idVuelo": "VUELO-P-01",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000005",
+        "precioTotal": 315193.36,
+        "idReserva": 3
+    },
+    "4": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000006",
+            "listaEquipaje": [{
+                "precio": 10000,
+                "cantidad": 1,
+                "tipoEquipaje": "MALETA"
+            }],
+            "precioIndividual": 325193.36,
+            "asientoAsignado": 4
+        }],
+        "fechaHora": "2025-05-10T10:15",
+        "idVuelo": "VUELO-P-01",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000006",
+        "precioTotal": 325193.36,
+        "idReserva": 4
+    },
+    "5": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000007",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 292670.08,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-06-15T15:00",
+        "idVuelo": "VUELO-P-02",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000007",
+        "precioTotal": 292670.08,
+        "idReserva": 5
+    },
+    "6": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000008",
+            "listaEquipaje": [],
+            "precioIndividual": 320219.4,
+            "asientoAsignado": 2
+        }],
+        "fechaHora": "2025-06-15T15:05",
+        "idVuelo": "VUELO-P-02",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000008",
+        "precioTotal": 320219.4,
+        "idReserva": 6
+    },
+    "7": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000009",
+            "listaEquipaje": [{
+                "precio": 20000,
+                "cantidad": 1,
+                "tipoEquipaje": "BODEGA"
+            }],
+            "precioIndividual": 373821.46,
+            "asientoAsignado": 3
+        }],
+        "fechaHora": "2025-06-15T15:10",
+        "idVuelo": "VUELO-P-02",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000009",
+        "precioTotal": 373821.46,
+        "idReserva": 7
+    },
+    "8": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000010",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 358821.46,
+            "asientoAsignado": 4
+        }],
+        "fechaHora": "2025-06-15T15:15",
+        "idVuelo": "VUELO-P-02",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000010",
+        "precioTotal": 358821.46,
+        "idReserva": 8
+    },
+    "9": {
+        "metodoDePago": "DEBITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000011",
+            "listaEquipaje": [],
+            "precioIndividual": 270088.08,
+            "asientoAsignado": 1
+        }],
+        "fechaHora": "2025-07-20T09:00",
+        "idVuelo": "VUELO-P-03",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000011",
+        "precioTotal": 270088.08,
+        "idReserva": 9
+    },
+    "20": {
+        "metodoDePago": "EFECTIVO",
+        "detallePasajero": [{
+            "dniPasajero": "30000022",
+            "listaEquipaje": [{
+                "precio": 20000,
+                "cantidad": 1,
+                "tipoEquipaje": "BODEGA"
+            }],
+            "precioIndividual": 265051.48,
+            "asientoAsignado": 4
+        }],
+        "fechaHora": "2025-09-01T10:15",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000022",
+        "precioTotal": 265051.48,
+        "idReserva": 20
+    },
+    "21": {
+        "metodoDePago": "CREDITO",
+        "detallePasajero": [{
+            "dniPasajero": "30000023",
+            "listaEquipaje": [{
+                "precio": 5000,
+                "cantidad": 1,
+                "tipoEquipaje": "MOCHILA"
+            }],
+            "precioIndividual": 250051.48,
+            "asientoAsignado": 5
+        }],
+        "fechaHora": "2025-09-01T10:20",
+        "idVuelo": "VUELO-P-05",
+        "cantidad": 1,
+        "dniPasajeroTitular": "30000023",
+        "precioTotal": 250051.48,
+        "idReserva": 21
+    }
 }

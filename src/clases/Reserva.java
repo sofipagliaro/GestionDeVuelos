@@ -46,7 +46,7 @@ public class Reserva {
         return pasajero;
     }
 
-    public void setPasajero(Pasajero pasajeo) {
+    public void setPasajero(Pasajero pasajero) {
         this.pasajero = pasajero;
     }
 
@@ -118,11 +118,8 @@ public class Reserva {
         JSONObject json = new JSONObject();
 
         json.put("idReserva", this.idReserva);
-
         json.put("idVuelo", this.vuelo.getIdVuelo());
-
         json.put("dniPasajeroTitular", this.pasajero.getDni());
-
         json.put("metodoDePago", this.metodoDePago.name());
         json.put("fechaHora", this.fechaHora.toString()); // Formato ISO 8601
         json.put("cantidad", this.cantidad);
