@@ -1,6 +1,5 @@
 package clases;
 
-import interfaces.I_VerViajes;
 import org.json.JSONException;
 import org.json.JSONObject;
 

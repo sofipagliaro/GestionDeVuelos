@@ -98,6 +98,22 @@ public class Reserva {
         this.precioTotal = precioTotal;
     }
 
+
+    public boolean contienePasajero(Pasajero pasajero) {
+        if (this.detallePasajero == null || pasajero == null) {
+            return false;
+        }
+
+        for (DetallePasajero detalle : this.detallePasajero) {
+            Pasajero pasajeroDelDetalle = detalle.getPasajero();
+            if (pasajeroDelDetalle != null && pasajeroDelDetalle.getDni().equals(pasajero.getDni())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     public JSONObject toJSON() throws JSONException {
         JSONObject json = new JSONObject();
 

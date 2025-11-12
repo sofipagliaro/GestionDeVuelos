@@ -29,7 +29,7 @@ public class Vuelo {
         this.avion = avion;
 
         if (asientosReservados == null) {
-            this.asientosReservados = new HashMap<>(); // ¡Inicialmente vacío!
+            this.asientosReservados = new HashMap<>();
         } else {
             this.asientosReservados = asientosReservados;
         }

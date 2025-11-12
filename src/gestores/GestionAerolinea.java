@@ -302,11 +302,9 @@ public class GestionAerolinea {
                     maxId = idNumerico;
                 }
             } catch (NumberFormatException e) {
-                // Manejar si hay claves inválidas que no sean números
                 System.err.println("Advertencia: Clave de reserva no numérica encontrada: " + idString);
             }
         }
-        // Devolvemos el máximo encontrado + 1 (empezando en 1, el primero será 1)
         return maxId + 1;
     }
 

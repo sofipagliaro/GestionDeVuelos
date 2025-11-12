@@ -396,7 +396,7 @@ public class AppMenu {
                         System.out.println("Ingrese el id del Avion al que quiere asignarle el vuelo. Estos son los ID disponibles");
                         Set<String> idsAviones = gestor.leerTodosLosIdsAvion();
                         for (String id : idsAviones) {
-                            System.out.println("ID: " + id); // Muestra el ID al usuario
+                            System.out.println("ID: " + id);
                         }
                         String idAvion = sc.nextLine();
 
