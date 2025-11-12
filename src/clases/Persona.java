@@ -1,5 +1,8 @@
 package clases;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.time.LocalDate;
 
 public abstract class Persona {
@@ -101,6 +104,22 @@ public abstract class Persona {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = new JSONObject();
+
+        json.put("dni", this.dni);
+        json.put("nombre", this.nombre);
+        json.put("apellido", this.apellido);
+        json.put("direccion", this.direccion);
+        json.put("telefono", this.telefono);
+        json.put("email", this.email);
+        json.put("fechaNacimiento", this.fechaNacimiento.toString());
+        json.put("usuario", this.usuario);
+        json.put("password", this.password);
+
+        return json;
     }
 
     @Override

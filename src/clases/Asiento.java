@@ -1,6 +1,8 @@
 package clases;
 
 import enums.TipoClase;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Asiento {
     private int idAsiento;
@@ -34,6 +36,15 @@ public class Asiento {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = new JSONObject();
+        json.put("idAsiento", this.idAsiento);
+        // Convertir Enum a String (ej: "TURISTA")
+        json.put("tipoClase", this.tipoClase.name());
+        json.put("precio", this.precio);
+        return json;
     }
 
     @Override

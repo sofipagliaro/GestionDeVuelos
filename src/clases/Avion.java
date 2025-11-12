@@ -2,8 +2,11 @@ package clases;
 
 import enums.EstadoAvion;
 import enums.TamanioAvion;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Avion {
     private String idAvion;
@@ -46,6 +49,24 @@ public class Avion {
 
     public void setMapaAsientos(HashMap<Integer, Asiento> mapaAsientos) {
         this.mapaAsientos = mapaAsientos;
+    }
+
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = new JSONObject();
+        json.put("idAvion", this.idAvion);
+        json.put("estadoAvion", this.estadoAvion.name());
+        json.put("tamanioAvion", this.tamanioAvion.name());
+
+        JSONObject jMapaAsientos = new JSONObject();
+
+        for (Map.Entry<Integer, Asiento> entry : this.mapaAsientos.entrySet()) {
+            String idAsientoString = String.valueOf(entry.getKey());
+            jMapaAsientos.put(idAsientoString, entry.getValue().toJSON());
+        }
+
+        json.put("mapaAsientos", jMapaAsientos);
+
+        return json;
     }
 
     @Override

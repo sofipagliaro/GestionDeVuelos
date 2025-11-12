@@ -3,6 +3,7 @@ package clases;
 import excepciones.IdDuplicadoException;
 import excepciones.IdNoExistenteException;
 import manejoJSON.JSONUtiles;
+import org.json.JSONException;
 
 import java.util.HashMap;
 
@@ -52,8 +53,13 @@ public class ClaseGenerica<T> {
     }
 
     private void guardarJSON() {
-        JSONUtiles.guardar(mapaEntidades, nombreArchivo);
-        System.out.println("Archivo " + nombreArchivo + " actualizado con " + mapaEntidades.size() + " entidades.");
+        try {
+            JSONUtiles.guardarColeccion(mapaEntidades, nombreArchivo);
+            System.out.println("Archivo " + nombreArchivo + " actualizado con " + mapaEntidades.size() + " entidades.");
+        } catch (JSONException e) {
+            System.err.println("ERROR: No se pudo guardar la colección debido a un problema de formato JSON.");
+            e.printStackTrace();
+        }
     }
 
     public HashMap<String, T> getMapaEntidades() {

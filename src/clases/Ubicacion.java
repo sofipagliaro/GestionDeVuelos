@@ -1,5 +1,8 @@
 package clases;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Ubicacion {
     private String ciudad;
     private String provincia;
@@ -23,6 +26,13 @@ public class Ubicacion {
 
     public void setProvincia(String provincia) {
         this.provincia = provincia;
+    }
+
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = new JSONObject();
+        json.put("ciudad", this.ciudad);
+        json.put("provincia", this.provincia);
+        return json;
     }
 
     @Override

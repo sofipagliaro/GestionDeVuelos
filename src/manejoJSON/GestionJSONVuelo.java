@@ -46,10 +46,8 @@ public class GestionJSONVuelo {
             v.setIdVuelo(jVuelo.getString("idVuelo"));
 
             // Origen y destino
-            JSONObject jOrigen = jVuelo.getJSONObject("origen");
-            String codigoOrigen = jOrigen.getString("codigo");
-            JSONObject jDestino = jVuelo.getJSONObject("destino");
-            String codigoDestino = jDestino.getString("codigo");
+            String codigoOrigen = jVuelo.getString("idOrigen");
+            String codigoDestino = jVuelo.getString("idDestino");
             v.setOrigen(mapaAeropuertos.get(codigoOrigen));
             v.setDestino(mapaAeropuertos.get(codigoDestino));
 
@@ -59,8 +57,7 @@ public class GestionJSONVuelo {
             v.setDuracion(jVuelo.getInt("duracion"));
 
             // Avión
-            JSONObject jAvion = jVuelo.getJSONObject("avion");
-            String idAvion = jAvion.getString("idAvion");
+            String idAvion = jVuelo.getString("idAvion");
             v.setAvion(mapaAviones.get(idAvion));
 
             // Asientos reservados (si existen)

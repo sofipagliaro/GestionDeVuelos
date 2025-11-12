@@ -2,6 +2,8 @@ package clases;
 
 import enums.MetodoDePago;
 import enums.Puesto;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.awt.*;
 import java.time.LocalDate;
@@ -39,6 +41,15 @@ public class Empleado extends Persona {
         this.fechaIngreso = fechaIngreso;
     }
 
+    @Override
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = super.toJSON();
+
+        json.put("puesto", this.puesto.name()); // Enum a String
+        json.put("fechaIngreso", this.fechaIngreso.toString()); // LocalDate a String
+
+        return json;
+    }
 
     @Override
     public String toString() {

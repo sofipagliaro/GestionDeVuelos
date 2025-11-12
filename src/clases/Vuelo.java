@@ -1,5 +1,8 @@
 package clases;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.time.LocalDateTime;
 import java.util.HashMap;
 
@@ -97,6 +100,32 @@ public class Vuelo {
 
     public void setPrecio(double precio) {
         this.precio = precio;
+    }
+
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = new JSONObject();
+
+        json.put("idVuelo", this.idVuelo);
+
+        if (this.origen != null) {
+            json.put("idOrigen", this.origen.getCodigo());
+        }
+        if (this.destino != null) {
+            json.put("idDestino", this.destino.getCodigo());
+        }
+
+        json.put("fechaHora", this.fechaHora.toString());
+        json.put("duracion", this.duracion);
+
+        if (this.avion != null) {
+            json.put("idAvion", this.avion.getIdAvion());
+        }
+
+        json.put("asientosReservados", new JSONObject(this.asientosReservados));
+
+        json.put("precio", this.precio);
+
+        return json;
     }
 
     @Override

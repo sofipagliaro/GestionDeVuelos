@@ -1,6 +1,9 @@
 package clases;
 
 import enums.MetodoDePago;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -93,6 +96,30 @@ public class Reserva {
 
     public void setPrecioTotal(double precioTotal) {
         this.precioTotal = precioTotal;
+    }
+
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = new JSONObject();
+
+        json.put("idReserva", this.idReserva);
+
+        json.put("idVuelo", this.vuelo.getIdVuelo());
+
+        json.put("dniPasajeroTitular", this.pasajero.getDni());
+
+        json.put("metodoDePago", this.metodoDePago.name());
+        json.put("fechaHora", this.fechaHora.toString()); // Formato ISO 8601
+        json.put("cantidad", this.cantidad);
+        json.put("precioTotal", this.precioTotal);
+
+
+        JSONArray jDetalles = new JSONArray();
+        for (DetallePasajero dp : this.detallePasajero) {
+            jDetalles.put(dp.toJSON()); // Llama al toJSON de DetallePasajero
+        }
+        json.put("detallePasajero", jDetalles);
+
+        return json;
     }
 
     @Override

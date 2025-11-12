@@ -3,8 +3,6 @@ import enums.MetodoDePago;
 import enums.Puesto;
 import enums.TipoEquipaje;
 import gestores.GestionAerolinea;
-import org.w3c.dom.stylesheets.LinkStyle;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -84,7 +82,7 @@ public class AppMenu {
                     // Mostrar reservas del pasajero
                     break;*/
                 case 2:
-                    System.out.println("→ Cerrando sesión...");
+                    ///System.out.println("→ Cerrando sesión...");
                     break;
                 default:
                     System.out.println("Opción inválida. Intente nuevamente.");
@@ -101,8 +99,9 @@ public class AppMenu {
             System.out.println("\n===== MENÚ EMPLEADO =====");
             System.out.println("1. Crear reserva");
             /*System.out.println("2. Modificar reserva");
-            System.out.println("3. Eliminar reserva");
-            System.out.println("2. Cerrar sesión");*/
+            System.out.println("3. Eliminar reserva");*/
+            System.out.println("4. Crear pasajero");
+            System.out.println("5. Cerrar sesión");
             System.out.print("Seleccione una opción: ");
             opcion = sc.nextInt();
 
@@ -119,52 +118,8 @@ public class AppMenu {
 
                         Persona personaExistente = gestor.obtenerPersonaPorId(dniPasajero);
 
-                        if (personaExistente == null) {
-
-                            System.out.println("\n--- Pasajero NO encontrado. PROCEDER A REGISTRO ---");
-
-                            System.out.print("Ingrese nombre: ");
-                            String nombre = sc.nextLine();
-
-                            System.out.print("Ingrese apellido: ");
-                            String apellido = sc.nextLine();
-
-                            System.out.print("Ingrese dirección: ");
-                            String direccion = sc.nextLine();
-
-                            System.out.print("Ingrese teléfono: ");
-                            long telefono = sc.nextLong();
-                            sc.nextLine();
-
-                            System.out.print("Ingrese email: ");
-                            String email = sc.nextLine();
-
-                            System.out.print("Ingrese fecha de nacimiento (YYYY-MM-DD, ej: 1995-03-01): ");
-                            String fechaNacimiento = sc.nextLine();
-                            LocalDate fechaNac = LocalDate.parse(fechaNacimiento);
-
-                            System.out.print("Ingrese nombre de usuario: ");
-                            String usuario = sc.nextLine();
-
-                            System.out.print("Ingrese contraseña: ");
-                            String password = sc.nextLine();
-
-                            pasajeroPrincipal = new Pasajero(dniPasajero, nombre, apellido, direccion, telefono, email, fechaNac, usuario, password);
-
-                            System.out.println("→ Registrando nuevo pasajero...");
-                            gestor.crearPersona(dniPasajero, pasajeroPrincipal);
-
-                            System.out.println("Pasajero registrado con éxito.");
-
-
-                        } else if (!(personaExistente instanceof Pasajero)) {
-                            throw new excepciones.ValorInvalidoException("El DNI ingresado corresponde a un Empleado/Administrador.");
-                        } else {
-
-                            pasajeroPrincipal = (Pasajero) personaExistente;
-                            System.out.println("Pasajero " + pasajeroPrincipal.getNombre() + " " + pasajeroPrincipal.getApellido() + " encontrado.");
-                        }
-
+                        pasajeroPrincipal = (Pasajero) personaExistente;
+                        System.out.println("Pasajero " + pasajeroPrincipal.getNombre() + " " + pasajeroPrincipal.getApellido() + " encontrado.");
 
                         System.out.println("\nIDs de Vuelos disponibles:");
 
@@ -182,7 +137,7 @@ public class AppMenu {
                         }
 
                         LocalDateTime ahora = LocalDateTime.now();
-                        LocalDateTime fechaVuelo = vuelo.getFechaHora(); // Asumo que Vuelo tiene este getter
+                        LocalDateTime fechaVuelo = vuelo.getFechaHora();
 
                         long horasHastaVuelo = ChronoUnit.HOURS.between(ahora, fechaVuelo);
 
@@ -358,7 +313,45 @@ public class AppMenu {
                     System.out.println("→ Eliminando reserva...");
                     // empleado.eliminarReserva();
                     break;*/
-                case 2:
+                case 4:
+
+                    System.out.print("Ingrese el DNI del pasajero: ");
+                    String dniPasajero = sc.nextLine();
+
+                    System.out.print("Ingrese nombre: ");
+                    String nombre = sc.nextLine();
+
+                    System.out.print("Ingrese apellido: ");
+                    String apellido = sc.nextLine();
+
+                    System.out.print("Ingrese dirección: ");
+                    String direccion = sc.nextLine();
+
+                    System.out.print("Ingrese teléfono: ");
+                    long telefono = sc.nextLong();
+                    sc.nextLine();
+
+                    System.out.print("Ingrese email: ");
+                    String email = sc.nextLine();
+
+                    System.out.print("Ingrese fecha de nacimiento (YYYY-MM-DD, ej: 1995-03-01): ");
+                    String fechaNacimiento = sc.nextLine();
+                    LocalDate fechaNac = LocalDate.parse(fechaNacimiento);
+
+                    System.out.print("Ingrese nombre de usuario: ");
+                    String usuario = sc.nextLine();
+
+                    System.out.print("Ingrese contraseña: ");
+                    String password = sc.nextLine();
+
+                    Pasajero pasajeroPrincipal = new Pasajero(dniPasajero, nombre, apellido, direccion, telefono, email, fechaNac, usuario, password);
+
+                    System.out.println("→ Registrando nuevo pasajero...");
+                    gestor.crearPersona(dniPasajero, pasajeroPrincipal);
+
+                    System.out.println("Pasajero registrado con éxito.");
+
+                case 5:
                     System.out.println("→ Cerrando sesión...");
                     break;
                 default:

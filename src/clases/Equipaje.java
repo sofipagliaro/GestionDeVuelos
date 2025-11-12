@@ -1,6 +1,8 @@
 package clases;
 
 import enums.TipoEquipaje;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class Equipaje {
     private TipoEquipaje tipoEquipaje;
@@ -40,6 +42,14 @@ public class Equipaje {
 
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
+    }
+
+    public JSONObject toJSON() throws JSONException {
+        JSONObject json = new JSONObject();
+        json.put("tipoEquipaje", this.tipoEquipaje.name()); // Enum a String
+        json.put("precio", this.precio);
+        json.put("cantidad", this.cantidad);
+        return json;
     }
 
     @Override
