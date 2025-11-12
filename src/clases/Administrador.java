@@ -17,8 +17,6 @@ public class Administrador extends Empleado implements I_VerViajes {
         this.vuelosGestionados = new ArrayList<>();
         this.reservasRegistradas = new ArrayList<>();
     }
-
-    /// Getter y Setter:
     public List<Vuelo> getVuelosGestionados() {
         return vuelosGestionados;
     }
@@ -31,9 +29,7 @@ public class Administrador extends Empleado implements I_VerViajes {
     public List<Vuelo> verVuelos() {
         LocalDateTime ahora = LocalDateTime.now();
 
-        List<Vuelo> vuelosAntiguos = vuelosGestionados.stream()
-                .filter(vuelo -> vuelo.getFechaHora().isBefore(ahora))
-                .collect(Collectors.toList());
+        List<Vuelo> vuelosAntiguos = vuelosGestionados.stream().filter(vuelo -> vuelo.getFechaHora().isBefore(ahora)).collect(Collectors.toList());
 
         if (vuelosAntiguos.isEmpty()) {
             System.out.println("No hay vuelos antiguos registrados.");

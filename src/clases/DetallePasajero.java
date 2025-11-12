@@ -12,6 +12,13 @@ public class DetallePasajero {
     public DetallePasajero() {
     }
 
+    public DetallePasajero(Pasajero pasajero, Asiento asientoAsignado, List<Equipaje> listaEquipaje, double precioIndividual) {
+        this.pasajero = pasajero;
+        this.asientoAsignado = asientoAsignado;
+        this.listaEquipaje = listaEquipaje;
+        this.precioIndividual = precioIndividual;
+    }
+
     /// GETTERS Y SETTERS
     public Pasajero getPasajero() {
         return pasajero;

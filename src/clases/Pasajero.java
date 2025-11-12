@@ -1,13 +1,22 @@
 package clases;
 
 import interfaces.I_VerViajes;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.HashMap;
 
 public class Pasajero extends Persona implements I_VerViajes {
+    public Pasajero(String dni, String nombre, String apellido, String direccion, long telefono, String email, LocalDate fechaNacimiento, String usuario, String password, List<Reserva> reservas) {
+        super(dni, nombre, apellido, direccion, telefono, email, fechaNacimiento, usuario, password);
+        this.reservas = reservas;
+    }
+
+    public Pasajero(String dni, String nombre, String apellido, String direccion, long telefono, String email, LocalDate fechaNacimiento, String usuario, String password) {
+        super(dni, nombre, apellido, direccion, telefono, email, fechaNacimiento, usuario, password);
+    }
+
     private List<Reserva> reservas;
 
 
@@ -24,7 +33,6 @@ public class Pasajero extends Persona implements I_VerViajes {
         this.reservas = reservas;
     }
 
-    /// Getter y Setter
 
 
     @Override

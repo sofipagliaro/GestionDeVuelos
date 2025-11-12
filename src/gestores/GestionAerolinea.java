@@ -7,10 +7,7 @@ import manejoJSON.*;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class GestionAerolinea {
     private ClaseGenerica<Aeropuerto> gestorAeropuertos;
@@ -298,7 +295,7 @@ public class GestionAerolinea {
     private int calcularSiguienteIdReserva() {
         int maxId = 0;
 
-       for (String idString : this.gestorReservas.getMapaEntidades().keySet()) {
+        for (String idString : this.gestorReservas.getMapaEntidades().keySet()) {
             try {
                 int idNumerico = Integer.parseInt(idString);
                 if (idNumerico > maxId) {
@@ -313,7 +310,7 @@ public class GestionAerolinea {
         return maxId + 1;
     }
 
-    public Reserva crearReserva(String idPasajeroTitular, String idVuelo, MetodoDePago metodoPago, List<DetallePasajero> detallesPasajeros) throws IdNoExistenteException, ReservaNoPermitidaException{
+    public Reserva crearReserva(String idPasajeroTitular, String idVuelo, MetodoDePago metodoPago, List<DetallePasajero> detallesPasajeros) throws IdNoExistenteException, ReservaNoPermitidaException {
 
         int idReservaNumerico = this.contadorReservas;
         String idReservaClave = String.valueOf(idReservaNumerico);
@@ -418,7 +415,7 @@ public class GestionAerolinea {
     }
 
 
-    ///LECTURA
+    /// LECTURA
     public Set<String> leerTodosLosIdsVuelo() {
         return this.gestorVuelos.getMapaEntidades().keySet();
     }
@@ -435,5 +432,64 @@ public class GestionAerolinea {
         return this.gestorAeropuertos.getMapaEntidades().keySet();
     }
 
+    public List<Integer> obtenerIdsAsientosDisponibles(String idVuelo) throws IdNoExistenteException {
 
+        Vuelo vuelo = obtenerVueloPorId(idVuelo);
+
+        if (vuelo == null) {
+            throw new IdNoExistenteException("El vuelo con ID " + idVuelo + " no existe.");
+        }
+
+        Avion avion = vuelo.getAvion();
+        if (avion == null) {
+            throw new IdNoExistenteException("El vuelo no tiene un avión asignado.");
+        }
+
+        HashMap<Integer, Boolean> asientosReservados = vuelo.getAsientosReservados();
+        HashMap<Integer, Asiento> todosLosAsientos = avion.getMapaAsientos();
+
+        List<Integer> idsDisponibles = new ArrayList<>();
+
+        for (Map.Entry<Integer, Asiento> entry : todosLosAsientos.entrySet()) {
+            int idAsiento = entry.getKey();
+
+            boolean estaReservado = asientosReservados.get(idAsiento);
+
+            if (!estaReservado) {
+                idsDisponibles.add(idAsiento);
+            }
+        }
+
+        return idsDisponibles;
+    }
+
+    public Asiento obtenerAsientoPorId(String idVuelo, int idAsiento)
+            throws IdNoExistenteException, AsientoNoDisponibleException {
+
+        Vuelo vuelo = obtenerVueloPorId(idVuelo);
+        if (vuelo == null) {
+            throw new IdNoExistenteException("El vuelo con ID " + idVuelo + " no existe.");
+        }
+
+        Avion avion = vuelo.getAvion();
+        if (avion == null) {
+            throw new IdNoExistenteException("El vuelo no tiene un avión asignado.");
+        }
+
+        Asiento asiento = avion.getMapaAsientos().get(idAsiento);
+
+        if (asiento == null) {
+            throw new IdNoExistenteException("El ID de asiento " + idAsiento + " no existe en el avión asignado al vuelo " + idVuelo + ".");
+        }
+
+        boolean estaReservado = vuelo.getAsientosReservados().getOrDefault(idAsiento, false);
+
+        if (estaReservado) {
+            throw new AsientoNoDisponibleException("El asiento " + idAsiento + " ya se encuentra reservado para el vuelo " + idVuelo + ".");
+        }
+
+        return asiento;
+
+
+    }
 }

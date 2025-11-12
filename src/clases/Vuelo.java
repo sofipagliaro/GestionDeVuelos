@@ -24,7 +24,13 @@ public class Vuelo {
         this.fechaHora = fechaHora;
         this.duracion = duracion;
         this.avion = avion;
-        this.asientosReservados = asientosReservados;
+
+        if (asientosReservados == null) {
+            this.asientosReservados = new HashMap<>(); // ¡Inicialmente vacío!
+        } else {
+            this.asientosReservados = asientosReservados;
+        }
+
         this.precio = precio;
     }
 
@@ -111,16 +117,12 @@ public class Vuelo {
     public static int calcularTotalPasajeros(HashMap<String, Vuelo> mapaVuelos) {
         int totalPasajeros = 0;
 
-        // 1. Itera sobre todos los objetos Vuelo que son los valores del mapa principal
         for (Vuelo vuelo : mapaVuelos.values()) {
 
-            // Accede al mapa de asientos reservados (HashMap<Integer, Boolean>)
             HashMap<Integer, Boolean> asientosReservados = vuelo.getAsientosReservados();
 
-            // 2. Itera sobre los valores (Boolean) de ese mapa para contarlos
             for (Boolean estaReservado : asientosReservados.values()) {
 
-                // 3. Si el valor es 'true', significa que está ocupado
                 if (estaReservado) {
                     totalPasajeros++;
                 }

@@ -1,14 +1,17 @@
 import clases.*;
+import enums.MetodoDePago;
 import enums.Puesto;
+import enums.TipoEquipaje;
 import gestores.GestionAerolinea;
+import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Scanner;
-import java.util.Set;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
 
 public class AppMenu {
+
 
     private static final Scanner sc = new Scanner(System.in);
     private static GestionAerolinea gestor = new GestionAerolinea();
@@ -45,22 +48,42 @@ public class AppMenu {
         int opcion;
         do {
             System.out.println("\n===== MENÚ PASAJERO =====");
-            System.out.println("1. Buscar vuelos disponibles");
-            System.out.println("2. Ver mis reservas");
-            System.out.println("3. Cerrar sesión");
+            System.out.println("1.Buscar vuelos por origen y destino");
+            /*System.out.println("2. Ver mis reservas");*/
+            System.out.println("2. Cerrar sesión");
             System.out.print("Seleccione una opción: ");
             opcion = sc.nextInt();
 
             switch (opcion) {
                 case 1:
-                    System.out.println("→ Buscar vuelos disponibles...");
-                    // Llamar a pasajero.buscarVuelosDisponibles();
+                    sc.nextLine();
+                    System.out.println("Ingresa una ciudad de origen");
+                    String origen = sc.nextLine();
+
+                    System.out.println("Ingresa una ciudad de destino");
+                    String destino = sc.nextLine();
+
+                    List<Vuelo> vuelosEncontrados = gestor.obtenerVuelosPorCiudadesOrigenDestino(origen, destino);
+
+                    if (vuelosEncontrados.isEmpty()){
+                        System.out.println("No se encontraron vuelos");
+                    }
+                    else {
+                        for (Vuelo vuelo : vuelosEncontrados) {
+                            System.out.println("  ID Vuelo: " + vuelo.getIdVuelo());
+                            System.out.println("  Origen: " + vuelo.getOrigen());
+                            System.out.println("  Destino: " + vuelo.getDestino());
+                            System.out.println("  Fecha/Hora: " + vuelo.getFechaHora());
+                            System.out.println("  Precio Base: $" + vuelo.getPrecio());
+                        }
+                    }
+
                     break;
-                case 2:
+                /*case 2:
                     System.out.println("→ Mostrando reservas...");
                     // Mostrar reservas del pasajero
-                    break;
-                case 3:
+                    break;*/
+                case 2:
                     System.out.println("→ Cerrando sesión...");
                     break;
                 default:
@@ -77,26 +100,265 @@ public class AppMenu {
         do {
             System.out.println("\n===== MENÚ EMPLEADO =====");
             System.out.println("1. Crear reserva");
-            System.out.println("2. Modificar reserva");
+            /*System.out.println("2. Modificar reserva");
             System.out.println("3. Eliminar reserva");
-            System.out.println("4. Cerrar sesión");
+            System.out.println("2. Cerrar sesión");*/
             System.out.print("Seleccione una opción: ");
             opcion = sc.nextInt();
 
             switch (opcion) {
                 case 1:
-                    System.out.println("→ Creando reserva...");
-                    // empleado.crearReserva();
+                    sc.nextLine();
+                    try {
+                        Pasajero pasajeroPrincipal;
+                        String dniPasajero;
+
+                        System.out.print("Ingrese el DNI del pasajero: ");
+                        dniPasajero = sc.nextLine();
+
+
+                        Persona personaExistente = gestor.obtenerPersonaPorId(dniPasajero);
+
+                        if (personaExistente == null) {
+
+                            System.out.println("\n--- Pasajero NO encontrado. PROCEDER A REGISTRO ---");
+
+                            System.out.print("Ingrese nombre: ");
+                            String nombre = sc.nextLine();
+
+                            System.out.print("Ingrese apellido: ");
+                            String apellido = sc.nextLine();
+
+                            System.out.print("Ingrese dirección: ");
+                            String direccion = sc.nextLine();
+
+                            System.out.print("Ingrese teléfono: ");
+                            long telefono = sc.nextLong();
+                            sc.nextLine();
+
+                            System.out.print("Ingrese email: ");
+                            String email = sc.nextLine();
+
+                            System.out.print("Ingrese fecha de nacimiento (YYYY-MM-DD, ej: 1995-03-01): ");
+                            String fechaNacimiento = sc.nextLine();
+                            LocalDate fechaNac = LocalDate.parse(fechaNacimiento);
+
+                            System.out.print("Ingrese nombre de usuario: ");
+                            String usuario = sc.nextLine();
+
+                            System.out.print("Ingrese contraseña: ");
+                            String password = sc.nextLine();
+
+                            pasajeroPrincipal = new Pasajero(dniPasajero, nombre, apellido, direccion, telefono, email, fechaNac, usuario, password);
+
+                            System.out.println("→ Registrando nuevo pasajero...");
+                            gestor.crearPersona(dniPasajero, pasajeroPrincipal);
+
+                            System.out.println("Pasajero registrado con éxito.");
+
+
+                        } else if (!(personaExistente instanceof Pasajero)) {
+                            throw new excepciones.ValorInvalidoException("El DNI ingresado corresponde a un Empleado/Administrador.");
+                        } else {
+
+                            pasajeroPrincipal = (Pasajero) personaExistente;
+                            System.out.println("Pasajero " + pasajeroPrincipal.getNombre() + " " + pasajeroPrincipal.getApellido() + " encontrado.");
+                        }
+
+
+                        System.out.println("\nIDs de Vuelos disponibles:");
+
+                        Set<String> idsVuelos = gestor.leerTodosLosIdsVuelo();
+                        for (String id : idsVuelos) {
+                            System.out.println("ID Vuelo: " + id);
+                        }
+
+                        System.out.print("Ingrese el ID del vuelo a reservar: ");
+                        String idVuelo = sc.nextLine();
+                        Vuelo vuelo = gestor.obtenerVueloPorId(idVuelo);
+
+                        if (vuelo == null) {
+                            throw new excepciones.IdNoExistenteException("El ID de vuelo no existe.");
+                        }
+
+                        LocalDateTime ahora = LocalDateTime.now();
+                        LocalDateTime fechaVuelo = vuelo.getFechaHora(); // Asumo que Vuelo tiene este getter
+
+                        long horasHastaVuelo = ChronoUnit.HOURS.between(ahora, fechaVuelo);
+
+                        if (horasHastaVuelo < 6) {
+                            throw new excepciones.ReservaNoPermitidaException("La reserva debe crearse con al menos 6 horas de antelación. Faltan solo " + horasHastaVuelo + " horas.");
+                        }
+
+                        int totalAsientos = vuelo.getAvion().getMapaAsientos().size();
+                        HashMap<Integer, Boolean> mapaReservados = vuelo.getAsientosReservados();
+
+                        int asientosOcupados = 0;
+                        for (Boolean estaReservado : mapaReservados.values()) {
+                            if (estaReservado) {
+                                asientosOcupados++;
+                            }
+                        }
+
+                        System.out.print("Ingrese la cantidad total de pasajes a reservar: ");
+                        int cantidadPasajes = sc.nextInt();
+                        sc.nextLine();
+
+                        if (cantidadPasajes > 4) {
+                            throw new excepciones.ValorInvalidoException("El número máximo de pasajes permitidos por reserva es 4.");
+                        }
+
+                        if (cantidadPasajes < 1) {
+                            throw new excepciones.ValorInvalidoException("La cantidad de pasajes debe ser mayor que cero.");
+                        }
+
+                        int asientosDisponibles = totalAsientos - asientosOcupados;
+
+                        if (cantidadPasajes > asientosDisponibles) {
+                            throw new excepciones.ValorInvalidoException("La cantidad de pasajes solicitada (" + cantidadPasajes + ") supera los asientos disponibles (" + asientosDisponibles + ") en el vuelo. Modifique la cantidad.");
+                        }
+
+                        if (totalAsientos == asientosOcupados) {
+                            throw new excepciones.AsientoNoDisponibleException("El avión está completamente lleno. No se puede crear la reserva.");
+                        }
+
+                        System.out.println("\nSeleccione Método de Pago:");
+                        System.out.println("1. EFECTIVO | 2. TARJETA | 3. TRANSFERENCIA");
+                        System.out.print("Ingrese el número de la opción: ");
+                        int opcionPago = sc.nextInt();
+                        sc.nextLine();
+
+                        MetodoDePago metodoDePago = switch (opcionPago) {
+                            case 1 -> MetodoDePago.EFECTIVO;
+                            case 2 -> MetodoDePago.DEBITO;
+                            case 3 -> MetodoDePago.CREDITO;
+                            default -> throw new excepciones.ValorInvalidoException("Opción de pago inválida.");
+                        };
+
+                        List<DetallePasajero> detalles = new ArrayList<>();
+
+                        List<Integer> idsAsientosLibres = gestor.obtenerIdsAsientosDisponibles(idVuelo);
+                        System.out.println("\nAsientos disponibles: " + idsAsientosLibres);
+
+                        for (int i = 0; i < cantidadPasajes; i++) {
+                            System.out.println("\n--- Detalle Pasaje N° " + (i + 1) + " ---");
+
+                            Asiento asientoElegido = null;
+                            boolean asientoValido = false;
+
+                            while (!asientoValido) {
+                                System.out.print("Ingrese el ID del asiento a asignar para este pasaje: ");
+                                int idAsiento = sc.nextInt();
+                                sc.nextLine();
+
+                                try {
+                                    asientoElegido = gestor.obtenerAsientoPorId(idVuelo, idAsiento);
+                                    asientoValido = true;
+                                } catch (excepciones.IdNoExistenteException | excepciones.AsientoNoDisponibleException e) {
+                                    System.out.println("ERROR: " + e.getMessage() + " Intente de nuevo.");
+                                }
+                            }
+
+                            List<Equipaje> listaEquipaje = new ArrayList<>();
+                            boolean agregandoEquipaje = true;
+
+                            System.out.println("\n--- GESTIÓN DE EQUIPAJE para Pasaje N° " + (i + 1) + " ---");
+                            while (agregandoEquipaje) {
+
+                                System.out.println("Seleccione tipo de equipaje a añadir (o 0 para terminar):");
+                                System.out.println("1. MOCHILA | 2. MALETA | 3. BODEGA | 4. MASCOTA | 5. EQUIPO_DEPORTIVO | 6. EQUIPO_MUSICAL");
+                                System.out.print("Ingrese el número de la opción: ");
+                                int opcionEquipaje = sc.nextInt();
+                                sc.nextLine();
+
+                                if (opcionEquipaje == 0) {
+                                    agregandoEquipaje = false;
+                                    continue;
+                                }
+
+                                TipoEquipaje tipoSeleccionado = null;
+                                int cantidadPiezas = 1;
+                                double precioBase = 0.0;
+
+                                switch (opcionEquipaje) {
+                                    case 1:
+                                        tipoSeleccionado = TipoEquipaje.MOCHILA;
+                                        precioBase = 0.0;
+                                        break;
+                                    case 2:
+                                        tipoSeleccionado = TipoEquipaje.MALETA;
+                                        precioBase = 25000.0;
+                                        break;
+                                    case 3:
+                                        tipoSeleccionado = TipoEquipaje.BODEGA;
+                                        precioBase = 40000.0;
+                                        break;
+                                    case 4:
+                                        tipoSeleccionado = TipoEquipaje.MASCOTA;
+                                        precioBase = 75000.0;
+                                        break;
+                                    case 5:
+                                        tipoSeleccionado = TipoEquipaje.EQUIPO_DEPORTIVO;
+                                        precioBase = 60000.0;
+                                        break;
+                                    case 6:
+                                        tipoSeleccionado = TipoEquipaje.EQUIPO_MUSICAL;
+                                        precioBase = 50000.0;
+                                        break;
+                                    default:
+                                        System.out.println("Opción de equipaje inválida. Intente de nuevo.");
+                                        continue;
+                                }
+
+
+                                if (tipoSeleccionado == TipoEquipaje.BODEGA || tipoSeleccionado == TipoEquipaje.MALETA) {
+                                    System.out.print("Ingrese la cantidad de piezas de " + tipoSeleccionado.name() + ": ");
+                                    cantidadPiezas = sc.nextInt();
+                                    sc.nextLine();
+                                }
+
+                                Equipaje nuevoEquipaje = new Equipaje(tipoSeleccionado, precioBase, cantidadPiezas);
+                                listaEquipaje.add(nuevoEquipaje);
+                                System.out.println("Equipaje agregado. Precio base: $" + (precioBase * cantidadPiezas));
+                            }
+
+                            double precioFinalPasaje = gestor.calcularPrecioIndividualPasajero(vuelo, asientoElegido, listaEquipaje);
+
+                            System.out.println("Precio individual calculado: $" + precioFinalPasaje);
+
+
+                            DetallePasajero detalle = new DetallePasajero(pasajeroPrincipal, asientoElegido, listaEquipaje, precioFinalPasaje);
+                            detalles.add(detalle);
+                        }
+
+
+                        System.out.println("→ Procesando reserva y calculando precio total...");
+
+                        gestor.crearReserva(pasajeroPrincipal.getDni(), idVuelo, metodoDePago, detalles);
+
+                        System.out.println("Reserva creada con éxito para " + cantidadPasajes + " pasaje(s).");
+
+
+                    } catch (java.time.format.DateTimeParseException e) {
+                        System.out.println("ERROR: Formato de fecha incorrecto. Use YYYY-MM-DD.");
+                    } catch (java.util.InputMismatchException e) {
+                        System.out.println("ERROR: Ingrese solo números válidos. Intente de nuevo.");
+                        sc.nextLine();
+                    } catch (excepciones.IdNoExistenteException | excepciones.ValorInvalidoException | excepciones.AsientoNoDisponibleException | excepciones.IdDuplicadoException e) {
+                        System.out.println("ERROR: " + e.getMessage());
+                    } catch (Exception e){
+                        System.out.println("ERROR INESPERADO: " + e.getMessage());
+                    }
                     break;
-                case 2:
+                /*case 2:
                     System.out.println("→ Modificando reserva...");
                     // empleado.modificarReserva();
                     break;
                 case 3:
                     System.out.println("→ Eliminando reserva...");
                     // empleado.eliminarReserva();
-                    break;
-                case 4:
+                    break;*/
+                case 2:
                     System.out.println("→ Cerrando sesión...");
                     break;
                 default:
@@ -148,14 +410,14 @@ public class AppMenu {
                         System.out.println("Ingrese el id del Aeropuerto de origen. Estos son los ID disponibles");
                         Set<String> idsAeropuertosOrigen = gestor.leerTodosLosIdsAeropuerto();
                         for (String id : idsAeropuertosOrigen) {
-                            System.out.println("ID: " + id); // Muestra el ID al usuario
+                            System.out.println("ID: " + id);
                         }
                         String idOrigen = sc.nextLine();
 
                         System.out.println("Ingrese el id del Aeropuerto de destino. Estos son los ID disponibles");
                         Set<String> idsAeropuertosDestino = gestor.leerTodosLosIdsAeropuerto();
                         for (String id : idsAeropuertosDestino) {
-                            System.out.println("ID: " + id); // Muestra el ID al usuario
+                            System.out.println("ID: " + id);
                         }
                         String idDestino = sc.nextLine();
 
@@ -167,7 +429,7 @@ public class AppMenu {
                         System.out.println("ERROR: Formato de fecha/hora incorrecto. Use YYYY-MM-DDTHH:MM.");
                     } catch (java.util.InputMismatchException e) {
                         System.out.println("ERROR: Ingrese solo números para duración y precio.");
-                        sc.nextLine(); // Limpiar el buffer del Scanner
+                        sc.nextLine();
                     } catch (excepciones.IdDuplicadoException e) {
                         System.out.println("ERROR: Ya existe un vuelo con esa clave.");
                     } catch (excepciones.IdNoExistenteException e) {

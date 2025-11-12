@@ -11,6 +11,12 @@ public class Equipaje {
     public Equipaje() {
     }
 
+    public Equipaje(TipoEquipaje tipoEquipaje, double precio, int cantidad) {
+        this.tipoEquipaje = tipoEquipaje;
+        this.precio = precio;
+        this.cantidad = cantidad;
+    }
+
     /// GETTERS Y SETTERS
     public TipoEquipaje getTipoEquipaje() {
         return tipoEquipaje;
